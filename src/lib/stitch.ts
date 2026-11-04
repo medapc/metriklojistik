@@ -14,7 +14,7 @@ const imageFor = (alt: string) => {
   const text = alt.toLocaleLowerCase('tr-TR');
 
   if (/whatsapp/.test(text)) return '/assets/whatsapp.png';
-  if (/^metrik lojistik$/.test(text)) return '/assets/logo.png';
+  if (/^(metrik lojistik|logo\.png)$/.test(text)) return '/assets/logo.png';
   if (/cold|refrigerat|pharma|soğuk|frigor|ısı kontroll/.test(text)) {
     return '/assets/cold-chain.png';
   }
@@ -30,7 +30,11 @@ const imageFor = (alt: string) => {
   return '/assets/fleet.png';
 };
 
-export function prepareStitchPage(source: string, page: 'home' | 'about' | 'services' | 'contact') {
+export function prepareStitchPage(
+  source: string,
+  page: 'home' | 'about' | 'services' | 'contact',
+  includeDesktopNav = true,
+) {
   const head = source.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i);
   const body = source.match(/<body\b([^>]*)>([\s\S]*?)<\/body>/i);
 
@@ -64,10 +68,12 @@ export function prepareStitchPage(source: string, page: 'home' | 'about' | 'serv
 
   content = content.replace(/tel:\+908502550000/g, 'tel:+905337639584');
   content = content.replace(/https:\/\/maps\.google\.com/g, 'https://www.google.com/maps/search/?api=1&query=Metrik+Lojistik');
-  content = content.replace(
-    /<header\b[^>]*>/i,
-    (tag) => `${tag}<nav class="desktop-nav" aria-label="Ana menü"><a href="/">Ana Sayfa</a><a href="/hakkimizda/">Hakkımızda</a><a href="/hizmetlerimiz/">Hizmetlerimiz</a><a href="/#filo">Filomuz</a><a href="/iletisim/">İletişim</a></nav>`,
-  );
+  if (includeDesktopNav) {
+    content = content.replace(
+      /<header\b[^>]*>/i,
+      (tag) => `${tag}<nav class="desktop-nav" aria-label="Ana menü"><a href="/">Ana Sayfa</a><a href="/hakkimizda/">Hakkımızda</a><a href="/hizmetlerimiz/">Hizmetlerimiz</a><a href="/#filo">Filomuz</a><a href="/iletisim/">İletişim</a></nav>`,
+    );
+  }
 
   const sectionAnchors: Record<typeof page, Array<[string, string]>> = {
     home: [['Filo Kapasitesi', 'filo'], ['Kapsamlı Lojistik Hizmetlerimiz', 'services']],
@@ -87,4 +93,13 @@ export function prepareStitchPage(source: string, page: 'home' | 'about' | 'serv
 
   headContent = headContent.replace(/<meta\b[^>]*name=["']shell-type["'][^>]*>/gi, '');
   return { bodyClass, content, headContent };
+}
+
+export function prepareDesktopStitchPage(source: string, page: 'home' | 'about' | 'services' | 'contact') {
+  const { content, ...metadata } = prepareStitchPage(source, page, false);
+  const desktopContent = content.replace(
+    /url\((["']?)https:\/\/lh3\.googleusercontent\.com\/[^)"']+\1\)/gi,
+    "url('/assets/fleet.png')",
+  );
+  return { ...metadata, content: desktopContent };
 }

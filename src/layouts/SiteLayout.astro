@@ -8,9 +8,10 @@ interface Props {
   bodyClass: string;
   content: string;
   headContent: string;
+  desktopContent: string;
 }
 
-const { title, description, canonical, bodyClass, content, headContent } = Astro.props;
+const { title, description, canonical, bodyClass, content, headContent, desktopContent } = Astro.props;
 ---
 
 <!doctype html>
@@ -25,7 +26,8 @@ const { title, description, canonical, bodyClass, content, headContent } = Astro
     <Fragment set:html={headContent} />
   </head>
   <body class={bodyClass}>
-    <Fragment set:html={content} />
+    <div class="mobile-version"><Fragment set:html={content} /></div>
+    <div class="desktop-version"><Fragment set:html={desktopContent} /></div>
     <script>
       const menuButton = document.querySelector<HTMLButtonElement>('button[aria-label="Menüyü Aç"]');
 

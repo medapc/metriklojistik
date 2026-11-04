@@ -1,6 +1,6 @@
 # Metrik Lojistik
 
-Astro tabanlı statik site. Stitch tasarımları dört sayfaya ayrılmıştır ve görseller `public/assets` altında sunulur.
+Astro tabanlı statik site. Dört sayfanın masaüstü tasarımı 1024 px ve üzerindeki ekranlarda `stitch_metrik_lojistik_corporate_website(desktop edition)` klasöründen yüklenir; daha dar ekranlarda mevcut mobil tasarım kullanılır. Görseller `public/assets` altında sunulur.
 
 ## Yerel geliştirme
 

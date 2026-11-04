@@ -1,0 +1,555 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Metrik Lojistik - Karayolu Taşımacılığı ve Tedarik Zinciri Çözümleri</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","error":"#ba1a1a","on-secondary-fixed":"#370e00","on-secondary-fixed-variant":"#7f2b00","inverse-surface":"#213145","secondary-fixed":"#ffdbce","background":"#f8f9ff","secondary-container":"#fd651e","tertiary-container":"#00164e","primary-fixed":"#d6e3fe","surface-variant":"#d3e4fe","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#3a475c","tertiary-fixed":"#dce1ff","surface-container-highest":"#d3e4fe","on-error-container":"#93000a","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","secondary-fixed-dim":"#ffb599","on-tertiary-fixed-variant":"#264191","on-primary-fixed":"#0e1c2f","on-secondary":"#ffffff","surface-dim":"#cbdbf5","inverse-primary":"#bac7e1","surface":"#f8f9ff","surface-bright":"#f8f9ff","secondary":"#a73a00","surface-container":"#e5eeff","on-background":"#0b1c30","surface-container-high":"#dce9ff","primary":"#000000","inverse-on-surface":"#eaf1ff","primary-container":"#0e1c2f","outline":"#75777d","on-tertiary-fixed":"#00164e","outline-variant":"#c5c6cd","on-tertiary-container":"#6780d3","tertiary-fixed-dim":"#b6c4ff","primary-fixed-dim":"#bac7e1","on-secondary-container":"#571a00","on-primary":"#ffffff","surface-tint":"#525f75","on-surface-variant":"#44474c","on-surface":"#0b1c30","on-error":"#ffffff","tertiary":"#000000","on-primary-container":"#77849c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","margin":"2.5rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-md":"1rem","margin-mobile":"1rem","gutter":"1.5rem","space-lg":"1.5rem","space-xl":"2.5rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-xl":["Plus Jakarta Sans"],"metric-display":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.025em","fontWeight":"800"}],"metric-display":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"800"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-lg":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-surface-container shadow-[0_1px_6px_rgba(11,28,48,0.04)]"><div class="w-full bg-surface-container-low border-b border-surface-container/60"><div class="w-full max-w-7xl mx-auto px-gutter h-10 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-secondary">call</span><a class="tracking-tight font-medium hover:text-secondary transition-colors" href="tel:+902623190041">+90 262 319 0041</a><span class="text-outline-variant mx-space-xs">/</span><a class="tracking-tight font-medium hover:text-secondary transition-colors" href="tel:+905337639584">+90 533 763 95 84</a></div><div class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-secondary">mail</span><a class="hover:text-secondary transition-colors" href="mailto:ramazan.olcucu@primegloballojistik.com">ramazan.olcucu@primegloballojistik.com</a></div></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-secondary">schedule</span><span class="">Pzt - Cmt: 08:30 - 18:30</span></div></div></div><div class="w-full max-w-7xl mx-auto px-gutter h-20 flex items-center justify-between"><div class="flex items-center gap-space-md"><a class="flex items-center group py-1" data-path="ana-sayfa" href="#"><img alt="Metrik Lojistik" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJQ2k60el321Uils2hW48dBwhfN35p1veB7-UPdN4-CRYatQqBSSy1FDvd-0K3uyWqphdmmk3dwhMNLfBlXho7PvtP-V-u3JquKEz7H--s5xOgBwwisN9FSfSvjuTIO1IcFgk8YIUIOydo67BG0ejAzMbZSSGIgsuH_gYw5R-tP4D5j9fRt-bb1O5RdRcnbKOXrDTqPTyN0URaGIRVy71I2GaurGXGDX65AFoNiKz3MLAKWyqamSsH"></a></div><nav class="hidden lg:flex items-center gap-1.5" data-active-classes="bg-surface-container text-on-surface font-semibold"><a aria-current="page" class="px-space-md py-2 rounded-lg transition-colors bg-surface-container text-on-surface font-semibold" data-path="ana-sayfa" href="#">Ana Sayfa</a><a class="px-space-md py-2 rounded-lg text-on-surface-variant font-title-md text-title-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="hakkimizda" href="#">Hakkımızda</a><a class="px-space-md py-2 rounded-lg text-on-surface-variant font-title-md text-title-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="hizmetlerimiz" href="#">Hizmetlerimiz</a><a class="px-space-md py-2 rounded-lg text-on-surface-variant font-title-md text-title-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="iletisim" href="#">İletişim</a></nav><div class="flex items-center gap-space-sm"><a class="flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low hover:bg-[#25D366]/10 border border-surface-container transition-all" href="https://wa.me/905337639584" rel="noopener noreferrer" target="_blank" title="WhatsApp Doğrudan İletişim"><img alt="WhatsApp" class="w-5 h-5 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6W1agcmydoqLtZjnrh87g4AsvUpa_qV1L_PU8URRwAK_F_vU7-R5rvBHAHgR7-AvV6E1_xBRWkSJUrZIOZocspR0Ye0HnUedltusTh5CttDrFKU977jFVehzrIxLLquCdb5KiAF1KJZK9q86CwnHdzAoCAWIQCYQo5y_WJU6lQePDiVgdpjEN2tJmAmQcVRFKUPGPZ-rLRWbcB3lOgUJX3mnu5H_kDxoyiwLQXplc0TBcy52C65fW"></a><a class="flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low hover:bg-secondary/10 border border-surface-container text-secondary transition-all" href="tel:+905337639584" title="Telefon ile Ara"><span class="material-symbols-outlined text-[20px]">phone_in_talk</span></a><a class="px-space-md py-2.5 rounded-xl bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-title-md text-title-md transition-all shadow-sm flex items-center gap-space-xs" data-path="iletisim" href="#"><span class="material-symbols-outlined text-[18px]">request_quote</span><span class="">Hemen Teklif Al</span></a></div></div></header><main class="w-full pt-[7.5rem] bg-background"><div class="flex flex-col w-full">
+<!-- Top Operational Banner Bar -->
+<section class="w-full bg-surface-container-low border-b border-surface-container py-2.5 px-gutter">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-surface-container-lowest font-medium text-secondary shadow-sm border border-surface-container">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          CANLI OPERASYON
+        </span>
+<span class="tracking-tight text-on-surface font-medium">81 İl Yurt İçi Komple &amp; Parsiyel Sevk Hatları Aktif</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span class="">UND &amp; K1 Taşıma Yetki Belgeli Filo</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">local_shipping</span>
+<span class="">Euro 6 Düşük Emisyon Standartı</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Hero Section -->
+<section class="w-full pt-10 pb-8 px-gutter relative overflow-hidden bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Copy & Conversions -->
+<div class="lg:col-span-6 flex flex-col space-y-space-lg">
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-surface-container self-start border border-surface-container-high/60">
+<span class="material-symbols-outlined text-[16px] text-secondary">route</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">Endüstriyel Karayolu Lojistiği</span>
+</div>
+<div class="space-y-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight leading-[1.12]">
+              Türkiye &amp; Avrupa <br>
+<span class="text-secondary font-black">Karayolu Taşımacılığında</span><br>
+              Güvenilir Çözüm Ortağınız
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+              Özmal Euro 6 modern tır filomuz, 7/24 uydu takipli operasyon merkezimiz ve dakik teslimat ilkemizle; fabrika, depo ve antrepolar arasında komple (FTL) ve parsiyel (LTL) yüklerinizi güvenle taşıyoruz.
+            </p>
+</div>
+<!-- Direct CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="px-space-lg py-3.5 rounded-xl bg-secondary text-on-secondary font-title-md text-title-md hover:bg-on-secondary-fixed-variant transition-all shadow-md flex items-center gap-space-sm group" href="tel:+905337639584">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">phone_forwarded</span>
+<span class="">Hemen Teklif Alın</span>
+</a>
+<a class="px-space-lg py-3.5 rounded-xl bg-surface-container-lowest text-on-surface font-title-md text-title-md hover:bg-surface-container transition-all border border-surface-container shadow-sm flex items-center gap-space-sm group" href="https://wa.me/905337639584" rel="noopener noreferrer" target="_blank">
+<img alt="WhatsApp" class="w-5 h-5 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6W1agcmydoqLtZjnrh87g4AsvUpa_qV1L_PU8URRwAK_F_vU7-R5rvBHAHgR7-AvV6E1_xBRWkSJUrZIOZocspR0Ye0HnUedltusTh5CttDrFKU977jFVehzrIxLLquCdb5KiAF1KJZK9q86CwnHdzAoCAWIQCYQo5y_WJU6lQePDiVgdpjEN2tJmAmQcVRFKUPGPZ-rLRWbcB3lOgUJX3mnu5H_kDxoyiwLQXplc0TBcy52C65fW">
+<span class="">WhatsApp Hızlı Sevk Hattı</span>
+</a>
+</div>
+<!-- Quick Telemetry Micro-List -->
+<div class="pt-space-xs flex flex-wrap items-center gap-y-2 gap-x-space-lg text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span class="font-medium text-on-surface">CMR Sigortalı Yük</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">sensors</span>
+<span class="font-medium text-on-surface">7/24 GPS İzleme</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">electric_bolt</span>
+<span class="font-medium text-on-surface">Sıfır Gecikme Prensibi</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Imagery -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-lg border border-surface-container bg-surface-container">
+<img alt="Metrik Lojistik Karayolu Tır Filosu ve Aktarma Sahası" class="w-full h-[430px] object-cover hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1XpCGcfM-zUnSHepflnv5sM9zfoiUQUq9guGuMu6OxxpLduCn-mxj8Z7jKOtoNX-iBIgT7ZZWOL0j9V8HGXXd84gMyDpVABrwX0lRjec7yQHo0J_vEf47ig-m6aptv6B9cWbOz93pAqXXAaYHYhPH73q1sDYkGtGv2pYa4HI8d9dD1DtScvXjp4yYlty3i-IQRwLqg-PeUXnZdA_dcsyC0sseJiBtMx8WA-0gy48rAl">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent pointer-events-none"></div>
+<!-- Bottom Float Badge on image -->
+<div class="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-surface-container-lowest/95 backdrop-blur-md border border-white/20 shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">warehouse</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface leading-tight font-bold">Metrik Lojistik Sevk Terminali</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kocaeli Merkez Depo &amp; Otoban Bağlantı Noktası</p>
+</div>
+</div>
+<span class="inline-flex items-center px-3 py-1 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-label-sm text-label-sm font-bold tracking-wide">
+                AKTİF FİLO
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3 Key Trust Feature Boxes (Tightened, Balanced Hierarchy) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-8">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all border border-surface-container flex items-start gap- space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center text-secondary shrink-0 mr-3">
+<span class="material-symbols-outlined text-[26px]">support_agent</span>
+</div>
+<div class="space-y-1">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">
+              7/24 Kesintisiz<br>
+<span class="text-secondary font-extrabold">Sevkiyat Yönetimi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1 leading-relaxed">
+              Yükleme anından teslimata kadar operasyon sorumlunuzla doğrudan iletişim ve anlık durum raporlaması.
+            </p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all border border-surface-container flex items-start gap- space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center text-secondary shrink-0 mr-3">
+<span class="material-symbols-outlined text-[26px]">rv_hookup</span>
+</div>
+<div class="space-y-1">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">
+              Geniş Özmal<br>
+<span class="text-secondary font-extrabold">Euro 6 Çekiciler</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1 leading-relaxed">
+              Tenteli, kapalı kasa ve mega treylerlerden oluşan genç araç parkımız ile yüksek taşıma kapasitesi.
+            </p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all border border-surface-container flex items-start gap- space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center text-secondary shrink-0 mr-3">
+<span class="material-symbols-outlined text-[26px]">alarm_on</span>
+</div>
+<div class="space-y-1">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">
+              Zamanında<br>
+<span class="text-secondary font-extrabold">Teslim Garantisi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1 leading-relaxed">
+              Optimize edilmiş güzergahlar ve çift şoför alternatifleri ile taahhüt edilen saatte hassas teslimat.
+            </p>
+</div>
+</div>
+</div>
+<!-- Integrated Corridor Strip (Direct visual continuation, tight 24px rhythm) -->
+<div class="mt-6 rounded-2xl bg-surface-container-low border border-surface-container-high/80 p-space-md sm:px-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest border border-surface-container flex items-center justify-center text-secondary shadow-xs shrink-0">
+<span class="material-symbols-outlined text-[22px]">public</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest block">Kesintisiz Rota Ağı</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Stratejik Karayolu Taşımacılık Koridorları</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 w-full lg:w-auto lg:flex-1">
+<div class="px-3.5 py-2 rounded-xl bg-surface-container-lowest shadow-xs border border-surface-container flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[17px]">location_city</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">81 İl Şehirlerarası Dağıtım</span>
+</div>
+<div class="px-3.5 py-2 rounded-xl bg-surface-container-lowest shadow-xs border border-surface-container flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[17px]">hub</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Balkanlar Ekspres Hattı</span>
+</div>
+<div class="px-3.5 py-2 rounded-xl bg-surface-container-lowest shadow-xs border border-surface-container flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[17px]">near_me</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Batı &amp; Orta Avrupa Düzenli Seferler</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Services Grid (4 Columns Desktop, Refined py-14) -->
+<section class="w-full py-14 px-gutter bg-surface-container-low/40 border-y border-surface-container">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-1 max-w-2xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Hizmet Yelpazesi</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Endüstriye Özel Karayolu Taşıma Modelleri
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Her yük tipi, tonaj ve zaman kısıtı için projelendirilmiş verimli, güvenli ve ekonomik yükleme çözümleri.
+          </p>
+</div>
+<a class="self-start md:self-auto px-space-md py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors font-title-md text-title-md text-on-surface flex items-center gap-2 border border-surface-container-high shadow-xs" href="https://wa.me/905337639584" rel="noopener noreferrer" target="_blank">
+<span class="">Tüm Sevk Fiyatlarını Sorun</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">arrow_forward</span>
+</a>
+</div>
+<!-- 4 Columns Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Service 1: Komple Taşımacılık (FTL) -->
+<div class="bg-surface-container-lowest rounded-2xl p- space-lg p-5 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group border border-surface-container">
+<div class="space-y-3.5">
+<div class="flex items-center justify-between">
+<span class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">local_shipping</span>
+</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">FTL</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Komple Taşımacılık (FTL)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Fabrikadan depoya doğrudan tır tahsisi. Aktarmasız sevk ile maksimum emniyet ve en hızlı teslim süresi.
+              </p>
+</div>
+<ul class="space-y-1.5 pt-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Standart &amp; Mega Treylerler</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Direkt Kapıdan Kapıya Sevk</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Tam Yük Güvencesi &amp; Mühürlü</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-3 space-y-2 border-t border-surface-container/60">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md transition-colors flex items-center justify-center gap-2 text-center text-[14px]" href="tel:+905337639584">
+<span class="material-symbols-outlined text-secondary text-[18px]">call</span>
+<span class="">Ara &amp; Sevk İste</span>
+</a>
+<a class="w-full py-1.5 px-3 rounded-lg text-secondary hover:bg-surface-container-low font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1.5 text-center font-bold" href="https://wa.me/905337639584?text=Merhaba,%20Komple%20Taşımacılık%20(FTL)%20fiyatı%20öğrenmek%20istiyorum." rel="noopener noreferrer" target="_blank">
+<img alt="WhatsApp" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6W1agcmydoqLtZjnrh87g4AsvUpa_qV1L_PU8URRwAK_F_vU7-R5rvBHAHgR7-AvV6E1_xBRWkSJUrZIOZocspR0Ye0HnUedltusTh5CttDrFKU977jFVehzrIxLLquCdb5KiAF1KJZK9q86CwnHdzAoCAWIQCYQo5y_WJU6lQePDiVgdpjEN2tJmAmQcVRFKUPGPZ-rLRWbcB3lOgUJX3mnu5H_kDxoyiwLQXplc0TBcy52C65fW">
+<span class="">WhatsApp Teklif Al</span>
+</a>
+</div>
+</div>
+<!-- Service 2: Parsiyel & Grupaj Taşımacılık (LTL) -->
+<div class="bg-surface-container-lowest rounded-2xl p- space-lg p-5 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group border border-surface-container">
+<div class="space-y-3.5">
+<div class="flex items-center justify-between">
+<span class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">LTL</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Parsiyel Nakliye (LTL)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Parça ve paletli yükleriniz için esnek hacim imkanı, maliyet avantajı ve düzenli toplama-dağıtım ağı.
+              </p>
+</div>
+<ul class="space-y-1.5 pt-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Palet &amp; Koli Bazlı Fiyat</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Düzenli Günlük Çıkışlar</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Barkodlu Depo Yönetimi</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-3 space-y-2 border-t border-surface-container/60">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md transition-colors flex items-center justify-center gap-2 text-center text-[14px]" href="tel:+902623190041">
+<span class="material-symbols-outlined text-secondary text-[18px]">call</span>
+<span class="">Santral Bilgi Al</span>
+</a>
+<a class="w-full py-1.5 px-3 rounded-lg text-secondary hover:bg-surface-container-low font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1.5 text-center font-bold" href="https://wa.me/905337639584?text=Merhaba,%20Parsiyel%20yüküm%20için%20fiyat%20öğrenmek%20istiyorum." rel="noopener noreferrer" target="_blank">
+<img alt="WhatsApp" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6W1agcmydoqLtZjnrh87g4AsvUpa_qV1L_PU8URRwAK_F_vU7-R5rvBHAHgR7-AvV6E1_xBRWkSJUrZIOZocspR0Ye0HnUedltusTh5CttDrFKU977jFVehzrIxLLquCdb5KiAF1KJZK9q86CwnHdzAoCAWIQCYQo5y_WJU6lQePDiVgdpjEN2tJmAmQcVRFKUPGPZ-rLRWbcB3lOgUJX3mnu5H_kDxoyiwLQXplc0TBcy52C65fW">
+<span class="">Hacim Paylaş &amp; Fiyat Al</span>
+</a>
+</div>
+</div>
+<!-- Service 3: Frigo & Soğuk Zincir -->
+<div class="bg-surface-container-lowest rounded-2xl p- space-lg p-5 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group border border-surface-container">
+<div class="space-y-3.5">
+<div class="flex items-center justify-between">
+<span class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">ac_unit</span>
+</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">SOĞUK ZİNCİR</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Frigo Taşımacılık</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                -25°C ile +20°C arasında ısı kontrollü gıda, yaş sebze-meyve, kimyasal ve medikal yük taşıma güvencesi.
+              </p>
+</div>
+<ul class="space-y-1.5 pt-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Anlık Sıcaklık Telemetrisi</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">ATP Belgeli Frigo Kasalar</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Hijyenik İç Yüzey Standartı</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-3 space-y-2 border-t border-surface-container/60">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md transition-colors flex items-center justify-center gap-2 text-center text-[14px]" href="tel:+905337639584">
+<span class="material-symbols-outlined text-secondary text-[18px]">call</span>
+<span class="">Frigo Sefer Planla</span>
+</a>
+<a class="w-full py-1.5 px-3 rounded-lg text-secondary hover:bg-surface-container-low font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1.5 text-center font-bold" href="https://wa.me/905337639584?text=Merhaba,%20Frigo%20/Soğuk%20Zincir%20taşımacılık%20talebinde%20bulunmak%20istiyorum." rel="noopener noreferrer" target="_blank">
+<img alt="WhatsApp" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6W1agcmydoqLtZjnrh87g4AsvUpa_qV1L_PU8URRwAK_F_vU7-R5rvBHAHgR7-AvV6E1_xBRWkSJUrZIOZocspR0Ye0HnUedltusTh5CttDrFKU977jFVehzrIxLLquCdb5KiAF1KJZK9q86CwnHdzAoCAWIQCYQo5y_WJU6lQePDiVgdpjEN2tJmAmQcVRFKUPGPZ-rLRWbcB3lOgUJX3mnu5H_kDxoyiwLQXplc0TBcy52C65fW">
+<span class="">Sıcaklık Rejimi Bildir</span>
+</a>
+</div>
+</div>
+<!-- Service 4: Ekspres Minivan Taşımacılık -->
+<div class="bg-surface-container-lowest rounded-2xl p- space-lg p-5 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group border border-surface-container">
+<div class="space-y-3.5">
+<div class="flex items-center justify-between">
+<span class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">speed</span>
+</span>
+<span class="px-2.5 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">EKSPRES</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Ekspres Minivan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Avrupa ve Balkanlar hattına havayolu hızında karayolu çözümü: 24-48 saat aralığında kapıya doğrudan teslimat.
+              </p>
+</div>
+<ul class="space-y-1.5 pt-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Hafta Sonu &amp; Gece Sevk</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">1.300 kg'a Kadar Hızlı Yük</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Gümrük Öncelikli Hızlı Geçiş</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-3 space-y-2 border-t border-surface-container/60">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md transition-colors flex items-center justify-center gap-2 text-center text-[14px]" href="tel:+905324197763">
+<span class="material-symbols-outlined text-secondary text-[18px]">call</span>
+<span class="">Acil Araç Çağır</span>
+</a>
+<a class="w-full py-1.5 px-3 rounded-lg text-secondary hover:bg-surface-container-low font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1.5 text-center font-bold" href="https://wa.me/905337639584?text=Merhaba,%20Ekspres%20Minivan%20hızlı%20taşımacılık%20teklifi%20almak%20istiyorum." rel="noopener noreferrer" target="_blank">
+<img alt="WhatsApp" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6W1agcmydoqLtZjnrh87g4AsvUpa_qV1L_PU8URRwAK_F_vU7-R5rvBHAHgR7-AvV6E1_xBRWkSJUrZIOZocspR0Ye0HnUedltusTh5CttDrFKU977jFVehzrIxLLquCdb5KiAF1KJZK9q86CwnHdzAoCAWIQCYQo5y_WJU6lQePDiVgdpjEN2tJmAmQcVRFKUPGPZ-rLRWbcB3lOgUJX3mnu5H_kDxoyiwLQXplc0TBcy52C65fW">
+<span class="">Rotayı Hemen Bildir</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Fleet & Technology Section (Balanced py-14) -->
+<section class="w-full py-14 px-gutter bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Fleet Visual -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-lg border border-surface-container bg-surface-container">
+<img alt="Metrik Lojistik Modern Konteyner ve Tır Filosu Terminali" class="w-full h-[450px] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VJTevW7cOjKtxWVkxcG27LM-9XegWQzoBHJ_UgBa5sYnNaecYD5m_I0xrWOvd2dSDhhTbFmo1VB0ST1kMbGE3bicxt50vHGnAOtmCibBAqe1NZfQLBoZCtQP-VOxmNvao77lxX6cno_Jb79pAkJ_tGX0RlrRwLWcSL9Uv8houAmvAeqwT6MHD3Da1ommYFRjXg6O8lDsui2iGAK2o1lKz5OXuBw1E7HadMuVf7WDhU">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<!-- Bottom floating stats on fleet image -->
+<div class="absolute bottom-5 left-5 right-5 grid grid-cols-3 gap-3">
+<div class="p-3 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md text-center border border-white/20 shadow-sm">
+<span class="font-metric-display text-metric-display text-on-surface block font-bold leading-none">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Özmal Tır Filosu</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md text-center border border-white/20 shadow-sm">
+<span class="font-metric-display text-metric-display text-secondary block font-bold leading-none">Euro 6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Çevreci Motor</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md text-center border border-white/20 shadow-sm">
+<span class="font-metric-display text-metric-display text-on-surface block font-bold leading-none">24/7</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Uydu Takip</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Fleet Operational Specifications -->
+<div class="lg:col-span-6 flex flex-col space-y-space-md">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Teknolojik Altyapı</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+              Yüksek Standartlı Filo ve Rota Optimizasyonu
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tüm araçlarımız periyodik bakımları eksiksiz yapılan, emisyon sınıfı yüksek ve telematik sistemlerle entegre çekicilerden meydana gelmektedir.
+            </p>
+</div>
+<!-- Solved Readability Issue: Clear dark navy text on soft container card -->
+<div class="bg-surface-container-lowest border border-surface-container p-space-md rounded-xl shadow-xs space-y-2">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[22px] text-secondary">security</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">
+                Gelişmiş Filo Güvenliği &amp; Rota Denetimi
+              </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Her çekicimizde çift yönlü telemetri donanımı bulunur. Sürüş güvenliği, mola süreleri, dingil ağırlık sensörleri ve yakıt verimliliği merkezimizden anbean analiz edilerek müşterilerimize kusursuz şeffaflık sunulur.
+            </p>
+</div>
+<!-- Feature checklist -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container shadow-xs flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">satellite_alt</span>
+<div>
+<h4 class="font-title-md text-[15px] text-on-surface font-semibold">GPS Telemetri</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">Canlı konum ve tahmini varış süresi (ETA) bildirimi.</p>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container shadow-xs flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">badge</span>
+<div>
+<h4 class="font-title-md text-[15px] text-on-surface font-semibold">ADR Sertifikalı Sürücü</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">SRC ve psikoteknik belgeli uzman kaptan kadrosu.</p>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container shadow-xs flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">alt_route</span>
+<div>
+<h4 class="font-title-md text-[15px] text-on-surface font-semibold">Rota Optimizasyonu</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">Trafik ve gümrük yoğunluğuna göre dinamik yönlendirme.</p>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container shadow-xs flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">description</span>
+<div>
+<h4 class="font-title-md text-[15px] text-on-surface font-semibold">Hızlı CMR &amp; İrsaliye</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">Teslim anında dijital evrak teyidi ve arşivleme.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Route Metric Bar -->
+<section class="w-full py-12 px-gutter bg-background">
+<div class="max-w-7xl mx-auto bg-surface-container-lowest rounded-2xl p- space-lg p-8 shadow-sm border border-surface-container">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg text-center md:text-left">
+<div class="space-y-1">
+<div class="font-metric-display text-metric-display text-on-surface font-black tracking-tight">81 İl</div>
+<div class="font-title-md text-title-md text-secondary font-bold">Kesintisiz Yurtiçi Dağıtım</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Türkiye'nin her sanayi bölgesine günlük sevk imkanı.</p>
+</div>
+<div class="space-y-1">
+<div class="font-metric-display text-metric-display text-on-surface font-black tracking-tight">24-48 Saat</div>
+<div class="font-title-md text-title-md text-secondary font-bold">Avrupa Minivan Teslimatı</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Havalimanı prosedürü beklemeden direkt fabrikaya teslim.</p>
+</div>
+<div class="space-y-1">
+<div class="font-metric-display text-metric-display text-on-surface font-black tracking-tight">%99.4</div>
+<div class="font-title-md text-title-md text-secondary font-bold">Zamanında Varış Oranı</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Planlanan sevk programlarına milimetrik uyum.</p>
+</div>
+<div class="space-y-1">
+<div class="font-metric-display text-metric-display text-on-surface font-black tracking-tight">1.500.000+</div>
+<div class="font-title-md text-title-md text-secondary font-bold">Yıllık Taşınan Tonaj</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ağır sanayi, hammadde ve ticari ürün taşımacılığı.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Corporate Contact & Quick Call Banner -->
+<section class="w-full py-14 px-gutter bg-surface-container-low border-t border-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg lg:p-space-xl shadow-md border border-surface-container">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Text Info -->
+<div class="lg:col-span-7 space-y-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold tracking-wider">
+              OPERASYON VE MERKEZ İLETİŞİM
+            </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+              Yükünüzü Planlayalım, Hemen Fiyat Teklifi Verelim
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+              Karayolu taşımacılık gereksinimleriniz için uzman operasyon yöneticilerimize doğrudan telefon hatlarımızdan veya WhatsApp üzerinden ulaşabilirsiniz.
+            </p>
+<div class="space-y-space-sm pt-space-xs font-body-md text-body-md text-on-surface">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">location_on</span>
+<span class=""><strong>Merkez Adres:</strong> Mimarsinan Mh. Eşref Bitlis Cad. Huzur İş Merkezi No:362 Kat:1 D:31 Kocaeli / Türkiye</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">mail</span>
+<span class=""><strong>Kurumsal E-posta:</strong> <a class="hover:text-secondary underline transition-colors" href="mailto:ramazan.olcucu@primegloballojistik.com">ramazan.olcucu@primegloballojistik.com</a></span>
+</div>
+</div>
+</div>
+<!-- Direct Call & Messaging Action Box -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-lg rounded-xl border border-surface-container-high/60 shadow-xs space-y-space-md">
+<div class="space-y-1">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Doğrudan İletişim Numaraları</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tıklayarak doğrudan arayabilir veya mesaj gönderebilirsiniz:</p>
+</div>
+<div class="space-y-space-sm">
+<!-- Number 1 -->
+<a class="w-full p-3.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all flex items-center justify-between border border-surface-container shadow-xs group" href="tel:+905337639584">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-semibold">Mobil &amp; Sevk Hattı</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">+90 533 763 95 84</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">chevron_right</span>
+</a>
+<!-- Number 2 -->
+<a class="w-full p-3.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all flex items-center justify-between border border-surface-container shadow-xs group" href="tel:+902623190041">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">deskphone</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-semibold">Merkez Ofis Santral</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">+90 262 319 0041</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">chevron_right</span>
+</a>
+<!-- Number 3 -->
+<a class="w-full p-3.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all flex items-center justify-between border border-surface-container shadow-xs group" href="tel:+905324197763">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">emergency</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-semibold">Acil Lojistik &amp; Operasyon</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">+90 532 419 7763</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">chevron_right</span>
+</a>
+</div>
+<!-- WhatsApp Direct Button -->
+<a class="w-full py-3 px-space-md rounded-xl bg-secondary text-on-secondary font-title-md text-title-md hover:bg-on-secondary-fixed-variant transition-all flex items-center justify-center gap-space-sm shadow-sm text-center" href="https://wa.me/905337639584" rel="noopener noreferrer" target="_blank">
+<img alt="WhatsApp" class="w-5 h-5 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6W1agcmydoqLtZjnrh87g4AsvUpa_qV1L_PU8URRwAK_F_vU7-R5rvBHAHgR7-AvV6E1_xBRWkSJUrZIOZocspR0Ye0HnUedltusTh5CttDrFKU977jFVehzrIxLLquCdb5KiAF1KJZK9q86CwnHdzAoCAWIQCYQo5y_WJU6lQePDiVgdpjEN2tJmAmQcVRFKUPGPZ-rLRWbcB3lOgUJX3mnu5H_kDxoyiwLQXplc0TBcy52C65fW">
+<span class="">Hızlı Sevk WhatsApp Hattını Aç</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low border-t border-surface-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-7xl mx-auto px-gutter py-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg"><div class="space-y-space-md"><a class="inline-block" data-path="ana-sayfa" href="#"><img alt="Metrik Lojistik" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJQ2k60el321Uils2hW48dBwhfN35p1veB7-UPdN4-CRYatQqBSSy1FDvd-0K3uyWqphdmmk3dwhMNLfBlXho7PvtP-V-u3JquKEz7H--s5xOgBwwisN9FSfSvjuTIO1IcFgk8YIUIOydo67BG0ejAzMbZSSGIgsuH_gYw5R-tP4D5j9fRt-bb1O5RdRcnbKOXrDTqPTyN0URaGIRVy71I2GaurGXGDX65AFoNiKz3MLAKWyqamSsH"></a><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Türkiye geneli ve uluslararası karayolu taşımacılığında güvenilir, zamanında ve entegre lojistik filo operasyonları.</p><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-[18px]">local_shipping</span><span class="uppercase font-semibold tracking-wider">Karayolu Yük Taşımacılığı</span></div></div><div class="space-y-space-md"><h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Hizmetlerimiz</h4><ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">chevron_right</span><span class="">Komple Taşımacılık (FTL)</span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">chevron_right</span><span class="">Parsiyel Nakliye (LTL)</span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">chevron_right</span><span class="">Frigo &amp; Soğuk Zincir</span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">chevron_right</span><span class="">Ekspres Minivan Taşımacılık</span></li></ul></div><div class="space-y-space-md"><h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Hızlı Bağlantılar</h4><ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant"><li class=""><a class="hover:text-on-surface transition-colors flex items-center gap-space-xs" data-path="ana-sayfa" href="#"><span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>Ana Sayfa</a></li><li class=""><a class="hover:text-on-surface transition-colors flex items-center gap-space-xs" data-path="hakkimizda" href="#"><span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>Hakkımızda</a></li><li class=""><a class="hover:text-on-surface transition-colors flex items-center gap-space-xs" data-path="hizmetlerimiz" href="#"><span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>Hizmetlerimiz</a></li><li class=""><a class="hover:text-on-surface transition-colors flex items-center gap-space-xs" data-path="iletisim" href="#"><span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>İletişim &amp; Teklif</a></li></ul></div><div class="space-y-space-md"><h4 class="font-title-lg text-title-lg text-on-surface font-semibold">İletişim Bilgileri</h4><div class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">location_on</span><span class="">Mimarsinan Mh. Eşref Bitlis Cad. Huzur İş Merkezi No:362 Kat:1 D:31 Kocaeli</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">phone</span><span class="">+90 262 319 0041 / +90 533 763 95 84</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">mail</span><span class="break-all">ramazan.olcucu@primegloballojistik.com</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">access_time</span><span class="">Pzt - Cmt: 08:30 - 18:30</span></div></div></div></div><div class="mt-10 pt-6 border-t border-surface-container flex flex-col sm:flex-row items-center justify-between font-label-sm text-label-sm text-on-surface-variant gap-space-sm"><p class="">© 2024 Metrik Lojistik Taşımacılık Tic. Ltd. Şti. Tüm Hakları Saklıdır.</p><p class="text-outline font-medium">Kurumsal Karayolu Lojistik Sistemleri</p></div></div></footer>
+
+</body></html>
