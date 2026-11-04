@@ -1,0 +1,377 @@
+<!DOCTYPE html><html lang="tr" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#7f2b00", "surface-container-high": "#dce9ff", "on-secondary-fixed": "#370e00", "tertiary-fixed-dim": "#b6c4ff", "outline-variant": "#c5c6cd", "on-primary-container": "#77849c", "secondary-fixed": "#ffdbce", "on-surface-variant": "#44474c", "primary": "#000000", "on-background": "#0b1c30", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#264191", "surface-bright": "#f8f9ff", "on-error": "#ffffff", "surface-tint": "#525f75", "on-secondary-container": "#571a00", "secondary-container": "#fd651e", "surface-dim": "#cbdbf5", "surface-container-low": "#eff4ff", "on-primary-fixed": "#0e1c2f", "background": "#f8f9ff", "on-secondary": "#ffffff", "on-tertiary-fixed": "#00164e", "surface-variant": "#d3e4fe", "on-error-container": "#93000a", "tertiary": "#000000", "primary-container": "#0e1c2f", "inverse-primary": "#bac7e1", "tertiary-container": "#00164e", "outline": "#75777d", "surface": "#f8f9ff", "surface-container-highest": "#d3e4fe", "surface-container-lowest": "#ffffff", "on-surface": "#0b1c30", "primary-fixed": "#d6e3fe", "error-container": "#ffdad6", "primary-fixed-dim": "#bac7e1", "on-tertiary-container": "#6780d3", "tertiary-fixed": "#dce1ff", "secondary": "#a73a00", "on-primary-fixed-variant": "#3a475c", "inverse-surface": "#213145", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb599", "on-tertiary": "#ffffff", "surface-container": "#e5eeff", "on-primary": "#ffffff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-md": "1rem", "space-xs": "0.25rem", "margin": "2.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-lg": "1.5rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Plus Jakarta Sans"], "metric-display": ["Inter"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "metric-display": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><a href="#" class="flex items-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQDKcF3LaTOwfcX64jiCOMRWo6lxDD1-7LlT0XvOw7sGCPgzShymPLjqKkrsyqCgzWhZOQWwj4fGGZPj7xeJx_BmS80uCfIJ9-YL5V5Ipv6GBKyh1PwjyuRQ90s0ZpT0bg0uUGK3mZsKmNVrAgEyJz-iskpCu3pjJF3Fzl_7xfWn9pxKXtfSICoaU2ZNGulX8cfIY4Brx3IvcL9nFs0wKe35Ty0jJVScqHOW6hHkqyv6e5OWcUL2eL" alt="Metrik Lojistik" class="h-8 md:h-9 w-auto object-contain"></a></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="WhatsApp İle Yazın" title="WhatsApp İle Yazın" class="w-11 h-11 flex items-center justify-center rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors shadow-sm" href="https://wa.me/905337639584" target="_blank" rel="noopener noreferrer"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 6.5C16.04 5.04 14.1 4.23 12.04 4.23C7.75 4.23 4.26 7.72 4.26 12.01C4.26 13.38 4.62 14.72 5.3 15.9L4.2 20L8.38 18.9C9.52 19.52 10.8 19.85 12.04 19.85C16.33 19.85 19.82 16.36 19.82 12.07C19.82 10.01 19.01 8.07 17.5 6.5ZM12.04 18.52C10.87 18.52 9.73 18.21 8.74 17.62L8.5 17.48L6.02 18.13L6.68 15.71L6.53 15.47C5.88 14.44 5.54 13.24 5.54 12.01C5.54 8.43 8.46 5.51 12.04 5.51C13.77 5.51 15.4 6.18 16.62 7.4C17.84 8.62 18.51 10.25 18.51 11.98C18.51 15.58 15.6 18.52 12.04 18.52ZM15.6 13.74C15.4 13.64 14.44 13.17 14.26 13.1C14.08 13.04 13.95 13.01 13.82 13.2C13.69 13.4 13.31 13.85 13.19 13.99C13.07 14.12 12.96 14.14 12.76 14.04C12.56 13.94 11.92 13.73 11.16 13.05C10.57 12.52 10.17 11.87 10.05 11.67C9.94 11.47 10.04 11.36 10.14 11.26C10.23 11.17 10.34 11.03 10.45 10.91C10.55 10.78 10.59 10.69 10.65 10.56C10.72 10.43 10.68 10.31 10.63 10.21C10.58 10.11 10.19 9.15 10.03 8.76C9.87 8.38 9.71 8.43 9.58 8.43C9.46 8.42 9.33 8.42 9.2 8.42C9.07 8.42 8.86 8.47 8.68 8.67C8.5 8.87 8 9.34 8 10.3C8 11.26 8.7 12.18 8.8 12.31C8.9 12.44 10.18 14.41 12.14 15.26C12.61 15.46 12.97 15.58 13.26 15.67C13.73 15.82 14.16 15.8 14.5 15.75C14.88 15.69 15.67 15.27 15.83 14.81C16 14.35 16 13.96 15.95 13.87C15.9 13.79 15.8 13.84 15.6 13.74Z" fill="#25D366" stroke="#25D366" stroke-width="0.3"></path></svg></a><a aria-label="Hemen Arayın" title="Hemen Arayın" class="w-11 h-11 flex items-center justify-center rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors shadow-sm" href="tel:+905337639584"><svg class="w-5 h-5 text-[#fd651e]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a><button aria-label="Menüyü Aç" class="w-11 h-11 flex items-center justify-center rounded-2xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">menu</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<!-- Breadcrumb & Header Section -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Kurumsal</span>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-semibold">Hakkımızda</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-extrabold tracking-tight mt-1">
+        Lojistikte Güven, Hız ve Uçtan Uca Teknoloji Odaklı Yaklaşım
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-1">
+        Metrik Lojistik; intermodal rota planlaması, yapay zeka destekli telematik çözümleri ve Euro 6 standartlarındaki modern filosuyla tedarik zincirlerini sürdürülebilir, ölçülebilir ve şeffaf bir güç merkezine dönüştürür.
+      </p>
+</section>
+<!-- Hero Corporate Image with Overlay Badge -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-md bg-surface-container-high aspect-[16/10]">
+<img class="w-full h-full object-cover" data-alt="High-tech logistics executive boardroom overlooking massive automated fulfillment warehouse with conveyor belts and robotic sorting arms, corporate team in modern navy business attire reviewing supply chain analytics on tablets and large wall screens under soft ambient evening lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeqnLXQf8TeXMqlQfteX2i4TAtJ0Kp5U0QYalmD--gvKxRpH4lanQ89po9P0D7Zww1cesvBo8fhj8Ez5OBTSd-JkYnBTIFpRm1lUBel5LMmNtxm8aa8Cd920U7uQR-CRvaBM1TvuvPKgi3ecYzGLNNTcXXHaO9cU-6Ldnvq83qC7gQ4Q_fEWI19bk4-CL1y0LYxD7tmPij_YmIUuG3JR35xk4Gwee0BpJMWhCNsYk">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent flex flex-col justify-end p-space-md">
+<div class="inline-flex items-center gap-1.5 self-start px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary text-label-sm font-label-sm font-semibold tracking-wide shadow-sm">
+<span class="material-symbols-outlined text-[15px]">corporate_fare</span>
+<span class="">Kurumsal Yönetim &amp; Operasyon Merkezi</span>
+</div>
+</div>
+</div>
+<!-- Rakamlarla Metrik Lojistik (Quick Impact Metrics) -->
+<section class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-secondary-container mb-2">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<div class="font-metric-display text-metric-display text-on-surface font-bold">250+</div>
+<div class="font-label-md text-label-md text-on-surface-variant font-medium mt-0.5">Özmal &amp; Sözleşmeli Araç</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-secondary-container mb-2">
+<span class="material-symbols-outlined text-[20px]">warehouse</span>
+</div>
+<div>
+<div class="font-metric-display text-metric-display text-on-surface font-bold">50.000 m²</div>
+<div class="font-label-md text-label-md text-on-surface-variant font-medium mt-0.5">A-Sınıfı Depolama Alanı</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-secondary-container mb-2">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div>
+<div class="font-metric-display text-metric-display text-on-surface font-bold">81 İl</div>
+<div class="font-label-md text-label-md text-on-surface-variant font-medium mt-0.5">Kesintisiz Dağıtım Ağı</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-secondary-container mb-2">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div>
+<div class="font-metric-display text-metric-display text-on-surface font-bold">150+</div>
+<div class="font-label-md text-label-md text-on-surface-variant font-medium mt-0.5">Uzman Operasyon Kadrosu</div>
+</div>
+</div>
+</section>
+<!-- Şirket Profili & Hikayemiz -->
+<section class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-1.5 text-secondary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+<span class="">Şirket Profili &amp; Hikayemiz</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">
+        Ölçülebilir Lojistik Yönetimi ile Kusursuz Rota
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Temelleri endüstriyel dağıtım ve intermodal taşımacılık vizyonuyla atılan Metrik Lojistik, bugün Türkiye ve Avrasya transit koridorlarında 200'ü aşkın kurumsal firmanın birincil lojistik çözüm ortağıdır.
+      </p>
+<!-- Philosophy Callout Card -->
+<div class="mt-space-xs p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-surface-container flex-shrink-0 flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Ölçülebilir Lojistik Felsefesi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+            Her paletin, her tırın ve her depolama sahasının canlı IoT sensörleriyle haritalandığı, varsayımların yerini doğrulanabilir telematik verilerin aldığı yeni nesil bir ekosistem inşa ediyoruz.
+          </span>
+</div>
+</div>
+</section>
+<!-- Vizyon & Misyon -->
+<section class="flex flex-col gap-space-sm">
+<!-- Misyon Card -->
+<div class="bg-primary-container text-on-primary p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 opacity-5 pointer-events-none text-white">
+<span class="material-symbols-outlined text-[140px]">track_changes</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface/10 flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[18px]">radar</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-secondary-fixed-dim">Misyonumuz</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-white font-bold tracking-tight mt-1">
+          Operasyonel Verimlilik &amp; Maliyet Avantajı
+        </h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/90 leading-relaxed">
+          Müşterilerimizin tedarik zincirlerini dijital telematik, Euro 6 çevre dostu filo ve gümrüklü antrepo çözümleriyle optimize ederek zaman ve maliyet avantajı sağlamak.
+        </p>
+</div>
+<!-- Vizyon Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-secondary">Vizyonumuz</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold tracking-tight mt-1">
+          Avrasya Transit Koridorlarının Lider Partneri
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Avrasya ve Türkiye transit koridorlarında sürdürülebilir, sıfır hata ve yapay zeka destekli rota optimizasyonu ile en çok tercih edilen B2B lojistik partneri olmak.
+        </p>
+</div>
+</section>
+<!-- Temel Değerlerimiz & Çalışma İlkelerimiz -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary-container">
+          Kurumsal İlkelerimiz
+        </div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">
+          Temel Değerlerimiz
+        </h2>
+</div>
+<div class="grid grid-cols-1 gap-space-sm mt-1">
+<!-- Değer 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary-container mt-0.5">
+<span class="material-symbols-outlined text-[22px]">visibility</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Şeffaflık &amp; Ölçülebilirlik</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Canlı GPS verisi, anlık SLA performans karnesi ve otomatik kargo statü paylaşımları ile sürprizsiz operasyon yönetimi.
+            </p>
+</div>
+</div>
+<!-- Değer 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary-container mt-0.5">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Zamanında Teslimat Hassasiyeti</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              %99.4 hedeflenen varış skoru, proaktif kriz masası ve alternatif rota planlayıcıları ile tam zamanında (JIT) sevkiyat.
+            </p>
+</div>
+</div>
+<!-- Değer 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary-container mt-0.5">
+<span class="material-symbols-outlined text-[22px]">eco</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Sürdürülebilirlik &amp; Yeşil Lojistik</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Düşük karbon salınımlı Euro 6 motorlar, intermodal demiryolu hatları ve çevre dostu antrepo optimizasyonu.
+            </p>
+</div>
+</div>
+<!-- Değer 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary-container mt-0.5">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Yüksek Güvenlik &amp; ADR Standartları</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Tam kapsamlı emtia sigortası, ADR sertifikalı deneyimli sürücüler ve uluslararası mevzuatlara tavizsiz uyum.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Operational Showcase Image https://lh3.googleusercontent.com/aida-public/AB6AXuDR136SRH7e1KHa8adG1auLYrTSHFgLBsmxA67jH2SstTYglTBP1OACRzYReEVRBmT7tDCT0zprh_wBUS-jHQbpMZuBmi7-5NRn21jHfujcDVWTYiwWe4Ja_sJq_oId0OPY4ok36YVS0KNlhbhhnashS-tR04Jg-DdEbxWSMQ9qIwiYGyuovX9RYiw6wagp3vtnjOon6Ot-4TUPcdaQETyDXj1n6MYtlkPkMcF9tEI -->
+<section class="flex flex-col gap-space-xs">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-md bg-surface-container-high aspect-[1.79]">
+<img alt="7/24 Aktif Telematik ve Sevkiyat Kontrol Merkezi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR136SRH7e1KHa8adG1auLYrTSHFgLBsmxA67jH2SstTYglTBP1OACRzYReEVRBmT7tDCT0zprh_wBUS-jHQbpMZuBmi7-5NRn21jHfujcDVWTYiwWe4Ja_sJq_oId0OPY4ok36YVS0KNlhbhhnashS-tR04Jg-DdEbxWSMQ9qIwiYGyuovX9RYiw6wagp3vtnjOon6Ot-4TUPcdaQETyDXj1n6MYtlkPkMcF9tEI">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent flex items-end p-space-md">
+<div class="flex items-center gap-2 text-white">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-md text-label-md font-semibold text-white">7/24 Aktif Telematik ve Sevkiyat Kontrol Merkezi</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1">
+        Canlı rota izleme, telematik ısı sensörleri ve gümrük süreçleri anlık olarak nöbetçi kontrol ekibimizce denetlenir.
+      </span>
+</section>
+<!-- Kurumsal Kilometre Taşları / Timeline -->
+<section class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary-container">Kilometre Taşları</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Gelişim Yolculuğumuz</h2>
+</div>
+<div class="relative flex flex-col gap-space-md pl-6">
+<!-- Connecting Line Indicator -->
+<div class="absolute left-2.5 top-3 bottom-3 w-0.5 bg-surface-container"></div>
+<!-- Milestone 1 -->
+<div class="relative flex flex-col">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-secondary-container">2014</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Kuruluş &amp; Yurtiçi FTL Filosu</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Yurtiçi komple tır taşımacılığı (FTL) ve parsiyel dağıtım operasyonlarının 25 özmal çekiciyle başlatılması.
+          </p>
+</div>
+<!-- Milestone 2 -->
+<div class="relative flex flex-col">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-secondary-container">2018</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Gümrüklü Antrepo &amp; WMS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Marmara ve İç Anadolu transit merkezlerinde A-tipi gümrüklü genel antrepo yatırımları ve barkodlu WMS entegrasyonu.
+          </p>
+</div>
+<!-- Milestone 3 -->
+<div class="relative flex flex-col">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-secondary-container">2021</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Intermodal &amp; Avrupa Hatları</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Ro-Ro ve demiryolu destekli Avrupa intermodal hatlarının devreye alınması ile %38 karbon salınım tasarrufu.
+          </p>
+</div>
+<!-- Milestone 4 -->
+<div class="relative flex flex-col">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container"></div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-secondary-container">Bugün</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Telematik &amp; Yeşil Dönüşüm</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Yapay zeka tabanlı dinamik rota optimizasyonu, 7/24 API veri entegrasyonu ve %100 Euro 6 yeşil filo modernizasyonu.
+          </p>
+</div>
+</div>
+</section>
+<!-- Kalite Belgeleri & Akreditasyonlar -->
+<section class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary-container">Sertifikasyonlar</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Kalite Belgeleri &amp; Uyum</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Uluslararası standartlarda operasyonel güvenlik ve yasal denetim akreditasyonlarımız.</p>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Belge 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">verified</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold">ISO 9001</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Kalite Yönetimi</span>
+</div>
+</div>
+<!-- Belge 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">eco</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold">ISO 14001</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Çevre Yönetimi</span>
+</div>
+</div>
+<!-- Belge 3 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">security</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold">ISO 27001</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Bilgi Güvenliği</span>
+</div>
+</div>
+<!-- Belge 4 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">health_and_safety</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold">ISO 45001</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">İş Sağlığı &amp; Güvenliği</span>
+</div>
+</div>
+<!-- Belge 5 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">warning</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold">ADR Uyum</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Tehlikeli Madde Taşıma</span>
+</div>
+</div>
+<!-- Belge 6 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">license</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold">TİO Belgesi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Bakanlık Yetki Belgesi</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Kurumsal İletişim & Teklif CTA -->
+<section class="bg-primary-container text-on-primary p-space-lg rounded-2xl shadow-lg flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex flex-col gap-space-xs relative z-10">
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase text-secondary-fixed-dim">
+          İş Birliği &amp; Kapasite Rezervasyonu
+        </span>
+<h2 class="font-headline-sm text-headline-sm text-white font-bold tracking-tight">
+          Tedarik Zincirinizi Güçlendirmeye Hazır mısınız?
+        </h2>
+<p class="font-body-md text-body-md text-inverse-on-surface/90">
+          Operasyonel hacminize uygun özel navlun teklifi alın veya kurumsal lojistik altyapı profilimizi inceleyin.
+        </p>
+</div>
+<div class="flex flex-col gap-space-xs relative z-10">
+<a class="w-full h-12 bg-secondary-container hover:opacity-95 text-on-secondary rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md font-bold transition-all shadow-md active:scale-[0.99]" data-path="fiyat-teklifi" href="#">
+<span class="material-symbols-outlined text-[20px]">request_quote</span>
+<span class="">Navlun Teklifi Al</span>
+</a>
+<a class="w-full h-12 bg-surface/10 hover:bg-surface/15 text-white rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="">Kurumsal Sunumu İndir (PDF)</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Micro-interaction for tactile feedback on CTA clicks
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('touchstart', () => {
+      el.style.transform = 'scale(0.98)';
+    }, { passive: true });
+    el.addEventListener('touchend', () => {
+      el.style.transform = '';
+    }, { passive: true });
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-secondary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="ana-sayfa" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm leading-tight">Ana Sayfa</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="hizmetlerimiz" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm leading-tight">Hizmetler</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="filo-ve-operasyon" href="#"><span class="material-symbols-outlined text-[22px]">commute</span><span class="font-label-sm text-label-sm leading-tight">Filomuz</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="iletisim" href="#"><span class="material-symbols-outlined text-[22px]">location_city</span><span class="font-label-sm text-label-sm leading-tight">İletişim</span></a></div></nav>
+
+
+
+
+
+
+
+
+
+</body></html>

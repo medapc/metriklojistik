@@ -1,0 +1,14 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import source from '../../stitch_metrik_lojistik_corporate_website/metrik_lojistik_hakk_m_zda/code.html?raw';
+import { prepareStitchPage } from '../lib/stitch';
+
+const page = prepareStitchPage(source, 'about');
+---
+
+<SiteLayout
+  title="Hakkımızda | Metrik Lojistik"
+  description="Metrik Lojistik'in kurumsal yaklaşımını, misyonunu, vizyonunu ve operasyonel standartlarını keşfedin."
+  canonical="https://metriklojistik.com/hakkimizda/"
+  {...page}
+/>

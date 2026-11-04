@@ -1,0 +1,14 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import source from '../../stitch_metrik_lojistik_corporate_website/metrik_lojistik_hizmetlerimiz/code.html?raw';
+import { prepareStitchPage } from '../lib/stitch';
+
+const page = prepareStitchPage(source, 'services');
+---
+
+<SiteLayout
+  title="Lojistik Hizmetlerimiz | Metrik Lojistik"
+  description="Karayolu, soğuk zincir, intermodal taşımacılık, akıllı antrepo ve proje taşımacılığı hizmetlerimiz."
+  canonical="https://metriklojistik.com/hizmetlerimiz/"
+  {...page}
+/>

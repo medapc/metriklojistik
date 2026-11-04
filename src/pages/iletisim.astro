@@ -1,0 +1,14 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import source from '../../stitch_metrik_lojistik_corporate_website/metrik_lojistik_i_leti_im_teklif_formu/code.html?raw';
+import { prepareStitchPage } from '../lib/stitch';
+
+const page = prepareStitchPage(source, 'contact');
+---
+
+<SiteLayout
+  title="İletişim ve Teklif | Metrik Lojistik"
+  description="Metrik Lojistik operasyon ve teklif ekibine telefon, WhatsApp veya e-posta ile ulaşın."
+  canonical="https://metriklojistik.com/iletisim/"
+  {...page}
+/>

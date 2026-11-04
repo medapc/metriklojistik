@@ -1,0 +1,14 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import source from '../../stitch_metrik_lojistik_corporate_website/metrik_lojistik_ana_sayfa/code.html?raw';
+import { prepareStitchPage } from '../lib/stitch';
+
+const page = prepareStitchPage(source, 'home');
+---
+
+<SiteLayout
+  title="Metrik Lojistik | Türkiye ve Uluslararası Taşımacılık"
+  description="Türkiye geneli ve uluslararası karayolu, intermodal taşımacılık, depolama ve filo yönetimi çözümleri."
+  canonical="https://metriklojistik.com/"
+  {...page}
+/>

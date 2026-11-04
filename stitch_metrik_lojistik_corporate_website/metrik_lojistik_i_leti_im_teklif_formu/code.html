@@ -1,0 +1,323 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#7f2b00", "surface-container-high": "#dce9ff", "on-secondary-fixed": "#370e00", "tertiary-fixed-dim": "#b6c4ff", "outline-variant": "#c5c6cd", "on-primary-container": "#77849c", "secondary-fixed": "#ffdbce", "on-surface-variant": "#44474c", "primary": "#000000", "on-background": "#0b1c30", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#264191", "surface-bright": "#f8f9ff", "on-error": "#ffffff", "surface-tint": "#525f75", "on-secondary-container": "#571a00", "secondary-container": "#fd651e", "surface-dim": "#cbdbf5", "surface-container-low": "#eff4ff", "on-primary-fixed": "#0e1c2f", "background": "#f8f9ff", "on-secondary": "#ffffff", "on-tertiary-fixed": "#00164e", "surface-variant": "#d3e4fe", "on-error-container": "#93000a", "tertiary": "#000000", "primary-container": "#0e1c2f", "inverse-primary": "#bac7e1", "tertiary-container": "#00164e", "outline": "#75777d", "surface": "#f8f9ff", "surface-container-highest": "#d3e4fe", "surface-container-lowest": "#ffffff", "on-surface": "#0b1c30", "primary-fixed": "#d6e3fe", "error-container": "#ffdad6", "primary-fixed-dim": "#bac7e1", "on-tertiary-container": "#6780d3", "tertiary-fixed": "#dce1ff", "secondary": "#a73a00", "on-primary-fixed-variant": "#3a475c", "inverse-surface": "#213145", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb599", "on-tertiary": "#ffffff", "surface-container": "#e5eeff", "on-primary": "#ffffff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-md": "1rem", "space-xs": "0.25rem", "margin": "2.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-lg": "1.5rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Plus Jakarta Sans"], "metric-display": ["Inter"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "metric-display": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Metrik Lojistik" class="h-8 md:h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFO-yN5Yg92dqhr8mWicSDK7oSK95gvsxfmPEFl8Cd2KH9poAh-fMbZoPrg2nl_pXDBKy2iKOZWb_7-WH0fnH55LMBlXExWczTGonWwx3Q-wJp2Sk70Q_99d8fahCZ5OocWM-Bcj3zv0Dr09zAgRarYKyIPU7qu6xOaa0Jb7wXlfC1ETqiyugjFWN9bfLM9l1jNlyVnM5lEiEFNA26zgDLgW1U9d1HVS4U7m-4PO48mhMHGcVjkadL"><div class="flex flex-col truncate"><span class="font-title-md text-title-md text-on-surface leading-tight truncate">Metrik Lojistik</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Metrik Lojistik   İletişim</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="WhatsApp İle Yazın" title="WhatsApp İle Yazın" class="w-11 h-11 flex items-center justify-center rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm active:scale-95 flex-shrink-0" href="https://wa.me/905337639584" target="_blank"><svg class="w-6 h-6 text-[#25D366]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path><path d="M16.5 14.5c-.3.8-1.5 1.5-2.2 1.5-1.1 0-2.8-.7-4.4-2.3-1.6-1.6-2.3-3.3-2.3-4.4 0-.7.7-1.9 1.5-2.2.3-.1.6 0 .8.4l.9 1.8c.2.4.1.8-.2 1.1l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.3-.3.7-.4 1.1-.2l1.8.9c.4.2.5.5.4.8z" fill="currentColor"></path></svg></a><a aria-label="Hemen Arayın" title="Hemen Arayın" class="w-11 h-11 flex items-center justify-center rounded-2xl bg-surface-container-low hover:bg-surface-container shadow-sm transition-all active:scale-95 flex-shrink-0" href="tel:+905337639584"><svg class="w-6 h-6 text-[#fd651e]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a><button aria-label="Menüyü Aç" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors flex-shrink-0"><span class="material-symbols-outlined text-[22px]">menu</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Operational Banner & Breadcrumb Header -->
+<section class="px-margin-mobile pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs self-start px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span> Kurumsal İletişim &amp; Merkezlerimiz</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background font-extrabold tracking-tight mt-1">Kurumsal İletişim &amp; Lojistik Ağımız</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Operasyon birimlerimiz, 7/24 nöbetçi dispeçer masamız ve bölgesel lojistik merkezlerimiz ile doğrudan iletişime geçebilir, hızlı navlun teklifinizi doğrudan masadan talep edebilirsiniz.</p>
+<!-- Rapid SLA Badges Strip -->
+<div class="flex items-center gap-2 overflow-x-auto py-1 no-scrollbar -mx-margin-mobile px-margin-mobile">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm whitespace-nowrap text-label-md font-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">bolt</span>
+<span class="font-semibold">15 Dk</span> Ortalama Yanıt
+      </div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm whitespace-nowrap text-label-md font-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">verified_user</span>
+<span class="font-semibold">%100</span> SLA Garantisi
+      </div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm whitespace-nowrap text-label-md font-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">support_agent</span>
+<span class="font-semibold">7/24</span> Kesintisiz Hat
+      </div>
+</div>
+</section>
+<!-- Hero Head Office Photo Card -->
+<section class="px-margin-mobile py-space-xs">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-md bg-surface-container-high">
+<img alt="Metrik Lojistik Genel Merkez ve Müşteri İlişkileri Binası Ataşehir" class="w-full h-52 object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUVyRn8iX0OmRlnk_xK-okyyyFYi8RJ_V_A6G6vv_BvviDxBsfH5eHbsi8F6DZe3zAeTFmW8KakfBx2SS6R67OlpLJuOVqRXM5e1gHzfMFmy8UrIFDYadV2cyN3_cSR12X3r4g05Mptbt15BgnAX4mbW1wl8HFy3ou-UOePjQW1rUrv82BHSw8cg9lOBa0slIaG0gs2QNU4rkHtoYlz3MV2rvDnNPANzqvw8RB8Is">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="absolute bottom-0 inset-x-0 p-space-md flex flex-col gap-1 text-on-primary">
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm uppercase tracking-wider text-secondary-fixed">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">corporate_fare</span>
+          Genel Merkez &amp; Operasyon Üssü
+        </div>
+<p class="font-title-md text-title-md font-bold text-surface-bright leading-snug">
+          Ataşehir Müşteri İlişkileri &amp; Yük Koordinasyon Yerleşkesi
+        </p>
+<p class="font-body-sm text-body-sm text-primary-fixed opacity-90">Mimarsinan Mh. Eşref Bitlis Cad. Huzur İş Merkezi No:362 Kat:1 D:31</p>
+</div>
+</div>
+</section>
+<!-- Fast Direct Contact Channels -->
+<section class="px-margin-mobile py-space-sm">
+<div class="flex flex-col gap-space-xs mb-space-xs">
+<span class="text-label-sm font-label-sm uppercase text-secondary-container font-semibold tracking-wider">Hızlı İletişim Kanalları</span>
+<h2 class="text-title-lg font-title-lg text-on-surface font-bold">Doğrudan Masaya Bağlanın</h2>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Call Channel -->
+<a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow active:scale-[0.99]" href="tel:+905337639584">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl bg-surface-container-low flex items-center justify-center"><svg class="w-6 h-6 text-[#fd651e]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">+90 533 763 95 84</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">7/24 Operasyon &amp; Çağrı Merkezi</span>
+</div>
+</div>
+<span class="px-3 py-1.5 bg-secondary-container text-on-secondary rounded-lg text-label-md font-label-md font-semibold">
+          Hemen Ara
+        </span>
+</a>
+<!-- WhatsApp Dispatch Desk -->
+<a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow active:scale-[0.99]" href="https://wa.me/905337639584">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl bg-surface-container-low flex items-center justify-center"><svg class="w-6 h-6 text-[#25D366]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path><path d="M16.5 14.5c-.3.8-1.5 1.5-2.2 1.5-1.1 0-2.8-.7-4.4-2.3-1.6-1.6-2.3-3.3-2.3-4.4 0-.7.7-1.9 1.5-2.2.3-.1.6 0 .8.4l.9 1.8c.2.4.1.8-.2 1.1l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.3-.3.7-.4 1.1-.2l1.8.9c.4.2.5.5.4.8z" fill="currentColor"></path></svg></div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">+90 533 763 95 84</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">WhatsApp Canlı Operasyon &amp; Evrak Masası</span>
+</div>
+</div>
+<span class="px-3 py-1.5 bg-surface-container text-on-surface font-label-md text-label-md font-semibold rounded-lg">
+          Mesaj Yaz
+        </span>
+</a>
+<!-- Email Channel -->
+<a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow active:scale-[0.99]" href="mailto:ramazan.olcucu@primegloballojistik.com">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">ramazan.olcucu@primegloballojistik.com</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kurumsal İhale &amp; Navlun Masası</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] pr-1">arrow_forward</span>
+</a>
+</div>
+<!-- Operating Hours Banner -->
+<div class="mt-2.5 p-3 rounded-xl bg-surface-container-low flex items-center gap-2.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">schedule</span>
+<div class="flex flex-col text-body-sm font-body-sm leading-tight">
+<span class="font-semibold text-on-surface">Merkez Ofis: Hafta İçi 08:30 - 18:30</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">Nöbetçi Dispeçer &amp; Canlı İzleme Filosu: 7/24 Aktif</span>
+</div>
+</div>
+</section>
+<!-- Interactive Navlun & Lojistik Teklif Formu -->
+<section class="px-margin-mobile py-space-sm"><div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md"><div class="flex flex-col gap-1"><div class="flex items-center justify-between"><span class="text-label-sm font-label-sm uppercase text-secondary-container font-bold tracking-wider">Doğrudan Teklif Masası</span><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface text-label-sm font-label-sm font-semibold">ramazan.olcucu@primegloballojistik.com</span></div><h2 class="font-headline-sm text-headline-sm text-on-surface font-extrabold tracking-tight">Nasıl Teklif Alabilirsiniz?</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Navlun ve lojistik taleplerinizi dijital veya telefon hatlarımız üzerinden 3 adımda kolayca kesinleştirin.</p></div><div class="flex flex-col gap-3"><div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-3"><div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-title-md flex-shrink-0">1</div><div class="flex flex-col"><span class="font-title-md text-title-md font-bold text-on-surface">Talebinizi İletin</span><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">Taşıma modu, çıkış-varış noktası ve tonaj bilgilerinizi e-posta (<span class="text-on-surface font-semibold">ramazan.olcucu@primegloballojistik.com</span>) veya telefon ile doğrudan masaya ulaştırın.</p></div></div><div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-3"><div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-title-md flex-shrink-0">2</div><div class="flex flex-col"><span class="font-title-md text-title-md font-bold text-on-surface">Hızlı Rota &amp; Navlun Analizi</span><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">Uzman lojistik ekibimiz ve nöbetçi dispeçerimiz, alternatif modları (FTL, Frigo, Intermodal) değerlendirerek 15 dakika içinde en uygun maliyetli rotayı hesaplar.</p></div></div><div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-3"><div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-title-md flex-shrink-0">3</div><div class="flex flex-col"><span class="font-title-md text-title-md font-bold text-on-surface">Resmi Teklif &amp; SLA Onayı</span><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">Yazılı fiyat teklifi, araç tahsis takvimi ve taahhütlü teslimat süresi tarafınıza iletilir; onayınızla birlikte yükleme planlanır.</p></div></div></div><div class="pt-2 border-t border-surface-container flex flex-col gap-2.5"><span class="text-label-sm font-label-sm uppercase text-on-surface-variant font-bold tracking-wider">Doğrudan İletişim Kanalları</span><div class="grid grid-cols-1 gap-2"><a class="flex items-center justify-between p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" href="mailto:ramazan.olcucu@primegloballojistik.com"><div class="flex items-center gap-2.5 min-w-0"><div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-[20px]">send</span></div><div class="flex flex-col min-w-0"><span class="font-title-md text-title-md font-bold text-on-surface truncate">ramazan.olcucu@primegloballojistik.com</span><span class="font-body-sm text-body-sm text-on-surface-variant">Yazılı Navlun Talepleri (15 Dk Yanıt)</span></div></div><span class="material-symbols-outlined text-secondary-container text-[20px]">arrow_forward</span></a><a class="flex items-center justify-between p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" href="tel:+905324197763"><div class="flex items-center gap-2.5 min-w-0"><div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-[20px]">headset_mic</span></div><div class="flex flex-col min-w-0"><span class="font-title-md text-title-md font-bold text-on-surface">+90 532 419 7763</span><span class="font-body-sm text-body-sm text-on-surface-variant">Doğrudan Navlun Masası Hattı</span></div></div><span class="material-symbols-outlined text-secondary-container text-[20px]">call</span></a></div></div></div></section>
+<!-- Lojistik Merkezleri & Antrepolarımız -->
+<section class="px-margin-mobile py-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm uppercase text-secondary-container font-semibold tracking-wider">Ağ &amp; Tesis Altyapımız</span>
+<h2 class="text-title-lg font-title-lg text-on-surface font-bold">Lojistik Merkezleri &amp; Hub'lar</h2>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm font-label-sm font-semibold">4 Ana Hub</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5 mt-1">
+<!-- Hub 1: İstanbul & Dilovası -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">İstanbul &amp; Dilovası Transfer Hub</h3>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">Marmara Ana Konsolidasyon Sahası</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface"><span class="material-symbols-outlined text-[14px] text-secondary-container">call</span> +90 262 319 0041</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mimarsinan Mh. Eşref Bitlis Cad. Huzur İş Merkezi No:362 Kat:1 D:31</p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-label-sm font-label-sm text-on-surface font-medium flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary-container">call</span> +90 262 319 0041</span>
+<a class="text-secondary-container text-label-sm font-label-sm font-semibold flex items-center gap-0.5" href="https://maps.google.com">
+            Haritada Gör
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Hub 2: İzmir & Kemalpaşa -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">ac_unit</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Ege Bölge &amp; Soğuk Hava Deposu</h3>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">Kemalpaşa Lojistik Köyü / İzmir</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface">Soğuk Hub</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Ansızca OSB Bölgesi 104 Sokak No: 8 Kemalpaşa / İzmir
+        </p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-label-sm font-label-sm text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">call</span>
+            +90 (232) 878 12 00
+          </span>
+<a class="text-secondary-container text-label-sm font-label-sm font-semibold flex items-center gap-0.5" href="https://maps.google.com">
+            Haritada Gör
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Hub 3: Ankara / İç Anadolu -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">İç Anadolu &amp; Transit Lojistik Üssü</h3>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">Kazan / Ankara (Lojistik Üs)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface">Transit Hub</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Ankara Lojistik Üssü C Blok No: 14 Saray Mah. Kahramankazan / Ankara
+        </p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-label-sm font-label-sm text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">call</span>
+            +90 (312) 815 44 00
+          </span>
+<a class="text-secondary-container text-label-sm font-label-sm font-semibold flex items-center gap-0.5" href="https://maps.google.com">
+            Haritada Gör
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Hub 4: Avrupa Koordinasyon Ofisi -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Avrupa Koordinasyon &amp; Gümrük Hub</h3>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">Neuss / Almanya &amp; Trieste / İtalya</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface">EU Hub</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Königsberger Str. 29, 41460 Neuss, Germany | Porto Franco Vecchio Trieste
+        </p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-label-sm font-label-sm text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">mail</span>
+            europe@metriklojistik.com
+          </span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">Ro-Ro &amp; Demiryolu Entegre</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Sıkça Sorulan Sorular (B2B SLA & Guvence Accordion) -->
+<section class="px-margin-mobile py-space-sm flex flex-col gap-space-xs">
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm uppercase text-secondary-container font-semibold tracking-wider">Merak Edilenler</span>
+<h2 class="text-title-lg font-title-lg text-on-surface font-bold">Sıkça Sorulan Sorular</h2>
+</div>
+<div class="flex flex-col gap-2 mt-1">
+<!-- FAQ 1 -->
+<details class="group p-3.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer list-none">
+<span class="font-title-md text-title-md font-bold text-on-surface pr-2">Navlun teklif süreci ne kadar sürer?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2.5 leading-relaxed">
+          Form üzerinden ilettiğiniz talepler, rota optimizasyon algoritmamız ve bölge dispeçerimiz tarafından incelenir. Standart FTL/LTL taleplerinde azami 15 dakika içinde net navlun ve araç çıkış takvimi iletilir.
+        </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group p-3.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer list-none">
+<span class="font-title-md text-title-md font-bold text-on-surface pr-2">ADR ve soğuk zincir yüklerinde sertifikasyon desteğiniz var mı?</span>
+<summary-icon class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</summary-icon>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2.5 leading-relaxed">
+          Evet. Filomuzdaki tüm frigo araçlar kalibre edilmiş çift rejimli termoking ünitelere sahiptir ve anlık telematik ısı çıktısı sunulur. ADR yüklerinde ise SRC-5 belgeli profesyonel sürücüler ve ADR donanımlı çekiciler atanır.
+        </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group p-3.5 rounded-xl bg-surface-container-lowest shadow-sm"><summary class="flex items-center justify-between cursor-pointer list-none">
+<span class="font-title-md text-title-md font-bold text-on-surface pr-2">Sevkiyat süreci hakkında nasıl bilgilendirilirim?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2.5 leading-relaxed">
+Atanan müşteri temsilciniz ve operasyon ekibimiz, yüklemenizden teslimata kadar tüm aşamalarda sizi düzenli e-posta ve telefon ile bilgilendirir.
+</p></details>
+</div>
+</section>
+<!-- Emergency Dispatch & Floating Support Card -->
+<section class="px-margin-mobile pt-space-xs pb-space-lg">
+<div class="p-4 rounded-2xl bg-primary-container text-on-primary shadow-lg flex flex-col gap-3 relative overflow-hidden">
+<!-- Decorative Backdrop Graphic -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary-container/20 pointer-events-none blur-xl"></div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-ping"></span>
+<span class="text-label-sm font-label-sm uppercase font-bold text-secondary-fixed tracking-wider">Acil Operasyon &amp; Nöbetçi Dispeçer</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg font-extrabold text-surface-bright">Aynı Gün Yükleme &amp; Kritik Çıkış</h3>
+<p class="font-body-sm text-body-sm text-primary-fixed opacity-90 mt-0.5">
+          Plan dışı acil yüklemeler veya gümrük aktarma aciliyetleri için anında nöbetçi filo şefine bağlanın.
+        </p>
+</div>
+<a class="flex items-center justify-center gap-2 h-11 rounded-xl bg-secondary-container text-on-secondary font-title-md text-title-md font-bold transition-all active:scale-95 shadow-md" href="tel:+905337639584">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+<span class="">+90 533 763 95 84 (Doğrudan Bağlan)</span>
+</a>
+</div>
+</section>
+</div>
+<!-- Inline Interaction Logic -->
+<script>
+  // Tab selector interactive switching
+  document.querySelectorAll('.mode-tab').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.mode-tab').forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      button.classList.remove('bg-surface-container-low', 'text-on-surface');
+      button.classList.add('bg-primary-container', 'text-on-primary');
+    });
+  });
+
+  // Quote form submission trigger
+  function triggerQuoteConfirmation() {
+    const btn = document.getElementById('submit-quote-btn');
+    const banner = document.getElementById('quote-success-banner');
+    
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">sync</span><span>Hesaplanıyor...</span>`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">done_all</span><span>Teklif Talebi Alındı</span>`;
+      btn.classList.remove('bg-secondary-container');
+      btn.classList.add('bg-primary-container');
+      banner.classList.remove('hidden');
+      banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 800);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-secondary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="ana-sayfa" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm leading-tight">Ana Sayfa</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="hizmetlerimiz" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm leading-tight">Hizmetler</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="filo-ve-operasyon" href="#"><span class="material-symbols-outlined text-[22px]">commute</span><span class="font-label-sm text-label-sm leading-tight">Filomuz</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-secondary-container font-semibold transition-all relative" data-path="iletisim" href="#"><div class="absolute -top-1 w-6 h-0.5 bg-secondary-container rounded-full"></div><span class="material-symbols-outlined text-[22px] [font-variation-settings:'FILL'_1]">support_agent</span><span class="font-label-sm text-label-sm leading-tight">İletişim</span></a></div></nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

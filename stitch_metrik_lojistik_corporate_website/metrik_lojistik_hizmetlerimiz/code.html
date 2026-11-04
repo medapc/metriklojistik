@@ -1,0 +1,483 @@
+<!DOCTYPE html><html lang="tr" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#7f2b00", "surface-container-high": "#dce9ff", "on-secondary-fixed": "#370e00", "tertiary-fixed-dim": "#b6c4ff", "outline-variant": "#c5c6cd", "on-primary-container": "#77849c", "secondary-fixed": "#ffdbce", "on-surface-variant": "#44474c", "primary": "#000000", "on-background": "#0b1c30", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#264191", "surface-bright": "#f8f9ff", "on-error": "#ffffff", "surface-tint": "#525f75", "on-secondary-container": "#571a00", "secondary-container": "#fd651e", "surface-dim": "#cbdbf5", "surface-container-low": "#eff4ff", "on-primary-fixed": "#0e1c2f", "background": "#f8f9ff", "on-secondary": "#ffffff", "on-tertiary-fixed": "#00164e", "surface-variant": "#d3e4fe", "on-error-container": "#93000a", "tertiary": "#000000", "primary-container": "#0e1c2f", "inverse-primary": "#bac7e1", "tertiary-container": "#00164e", "outline": "#75777d", "surface": "#f8f9ff", "surface-container-highest": "#d3e4fe", "surface-container-lowest": "#ffffff", "on-surface": "#0b1c30", "primary-fixed": "#d6e3fe", "error-container": "#ffdad6", "primary-fixed-dim": "#bac7e1", "on-tertiary-container": "#6780d3", "tertiary-fixed": "#dce1ff", "secondary": "#a73a00", "on-primary-fixed-variant": "#3a475c", "inverse-surface": "#213145", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb599", "on-tertiary": "#ffffff", "surface-container": "#e5eeff", "on-primary": "#ffffff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-md": "1rem", "space-xs": "0.25rem", "margin": "2.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-lg": "1.5rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Plus Jakarta Sans"], "metric-display": ["Inter"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "metric-display": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><a href="#" class="flex items-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCFDMxxAwObNRvRJjnEtR-4YgNlPmjTokCujHxDyXXK3GqdYU1on-oGrxGxToIFuyFxHdq1wIoBzOfT5ImDRA8l20lORSldpsAUytTYyJ6SxWRdx8OT8TN1XL298Jq8sqLCpGCFUEfye1jW9n3ePoDng-uMx6XwddrZ28aLieKsp0jXJfZQzEfSWZaPHR0LMJXJcdK9dsAxrqq7-4Ez46E1RajLG-891LBxG9mpCjfeXaQaMPOhnep" alt="Metrik Lojistik" class="h-8 md:h-9 w-auto object-contain"></a></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="WhatsApp İle Yazın" title="WhatsApp İle Yazın" target="_blank" rel="noopener noreferrer" class="w-11 h-11 flex items-center justify-center rounded-2xl bg-surface-container-low hover:bg-surface-container shadow-sm transition-all active:scale-[0.98]" href="https://wa.me/905337639584"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path><path d="M9.5 9.5c.3-.5.7-.5 1-.5.3 0 .6 0 .8.5l.7 1.7c.2.4.1.8-.2 1.1l-.5.6c.5 1 1.4 1.9 2.4 2.4l.6-.5c.3-.3.7-.4 1.1-.2l1.7.7c.5.2.5.5.5.8 0 .3 0 .7-.5 1-.6.4-1.4.6-2.1.4-2.8-.7-5.1-3-5.8-5.8-.2-.7 0-1.5.4-2.1z"></path></svg></a><a aria-label="Hemen Arayın" title="Hemen Arayın" class="w-11 h-11 flex items-center justify-center rounded-2xl bg-surface-container-low hover:bg-surface-container shadow-sm transition-all active:scale-[0.98]" href="tel:+905337639584"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="#f95f19" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a><button aria-label="Menüyü Aç" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">menu</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- 1. Header & Breadcrumb Context -->
+<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-sm bg-gradient-to-b from-surface-container-low to-surface">
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">hub</span>
+        Metrik Çözümleri
+      </span>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Hizmetlerimiz</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-extrabold tracking-tight">
+      Uçtan Uca Entegre Lojistik ve Tedarik Zinciri Hizmetleri
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Karayolu, intermodal, antrepo, soğuk zincir ve proje taşımacılığında telematik veri gücüyle ölçülebilir, dakik ve güvenli taşımacılık çözümleri sunuyoruz.
+    </p>
+<!-- Key Performance Strip -->
+<div class="grid grid-cols-3 gap-2 pt-space-xs">
+<div class="flex flex-col p-2.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-metric-display text-metric-display text-on-surface font-bold leading-none">%99.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Zamanında Teslimat</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-metric-display text-metric-display text-secondary-container font-bold leading-none">81 İl</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Aktif Dağıtım</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-xl bg-surface-container-lowest shadow-sm"><span class="font-metric-display text-metric-display text-on-surface font-bold leading-none">7/24</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Operasyonel Destek</span></div>
+</div>
+</section>
+<!-- 2. Filter / Category Tabs -->
+<section class="sticky top-16 z-40 bg-surface/95 backdrop-blur-md py-space-sm px-margin-mobile border-b border-transparent">
+<div class="flex gap-2 overflow-x-auto no-scrollbar scroll-smooth py-0.5" id="categoryFilterContainer">
+<button class="category-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold whitespace-nowrap transition-all duration-200 bg-primary-container text-surface-container-lowest shadow-sm" onclick="filterCategory('all', this)">
+        Tümü
+      </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold whitespace-nowrap transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterCategory('road', this)">
+        Karayolu &amp; FTL/LTL
+      </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold whitespace-nowrap transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterCategory('cold', this)">
+        Soğuk Zincir
+      </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold whitespace-nowrap transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterCategory('intermodal', this)">
+        Intermodal &amp; Raylı
+      </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold whitespace-nowrap transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterCategory('warehouse', this)">
+        Depolama &amp; WMS
+      </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold whitespace-nowrap transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterCategory('project', this)">
+        Proje Taşımacılığı
+      </button>
+</div>
+</section>
+<!-- 3. Featured Services List -->
+<section class="px-margin-mobile py-space-md flex flex-col gap-space-lg" id="servicesList">
+<!-- Card 1: Karayolu Taşımacılığı -->
+<article class="service-card flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_4px_16px_rgba(11,28,48,0.06)] transition-transform duration-200 active:scale-[0.99]" data-category="road">
+<div class="relative w-full h-52 overflow-hidden">
+<img class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" data-alt="A modern fleet of deep blue Metrik Logistics commercial heavy trucks parked in clean diagonal order at an expansive intermodal container depot in Istanbul during vibrant golden hour sunset, showing high-tech cargo shipping containers and precision asphalt terminal markings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy6yt3w2Hfck-Xnn9BHcAEuNmrM3O_TEYQfF9hgnPlgXDTSO9V4zloUrfSlWfwh1iCiUI4LHiYZNVz74KU1rJCdSJJHCPKmezlFJwOWh4yNiOHNpHvKIiZbR_64zrluJVc0QUecPyM-e7ic5nh-oshfnun0JUADhAs7OCVWq02C8ey9XMDKtrj_sNG_OOw-ye034xSiXqg_fLO3qMK1N0dby8leJi3VP9LsWRPkQA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-surface-container-lowest">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">7/24 KONTROLLÜ SEVKİYAT</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-container/70 backdrop-blur-md px-2 py-0.5 rounded text-surface-container-lowest">FTL / LTL Filosu</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<!-- Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">81 İl Dağıtım</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">Euro 6 Çekiciler</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed-variant">24-48 Saat Ekspres</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold flex items-center justify-between">
+            Karayolu Taşımacılığı (FTL &amp; LTL)
+            <span class="material-symbols-outlined text-secondary-container">local_shipping</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+            Türkiye geneli ve Avrupa hatlarında komple (FTL) ve parsiyel (LTL) yük taşımacılığı. GPS ile anlık lokasyon ve sıcaklık takibi.
+          </p>
+</div>
+<!-- Micro Feature List -->
+<div class="flex flex-col gap-1.5 p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Minivan ekspres hızlı teslimat servisi</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">ADR lisanslı tehlikeli kimyasal taşımacılık</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Kapıdan kapıya garantili SLA güvencesi</span>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-1 flex items-center gap-2"><a class="flex-1 h-11 bg-primary-container text-surface-container-lowest rounded-xl flex items-center justify-center gap-1.5 font-label-md text-label-md font-semibold transition-opacity active:opacity-90" href="tel:+908502550000"><span class="material-symbols-outlined text-[18px]">phone_in_talk</span><span class="">Müşteri Temsilcisini Ara</span></a><a aria-label="Hizmet Detayları" class="h-11 px-3.5 flex items-center justify-center gap-1 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" href="#"><span class="material-symbols-outlined text-[20px]">info</span><span class="hidden xs:inline">Detaylar</span></a></div>
+</div>
+</article>
+<!-- Card 2: Soğuk Zincir & Frigorifik Lojistik -->
+<article class="service-card flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_4px_16px_rgba(11,28,48,0.06)] transition-transform duration-200 active:scale-[0.99]" data-category="cold">
+<div class="relative w-full h-52 overflow-hidden">
+<img class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" data-alt="Inside of an ultra modern refrigerated pharmaceutical cold-storage container trailer showing high-tech digital digital Thermo King climate monitor displays with frost vapor, strictly palletized boxes of pharmaceuticals secured with cargo netting and polished steel surfaces under crisp white clinical illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJis92DlB8w8y1fxriq9cnTNcH0Tf9AAOBtdjee4l6zENPTBsHkqvaCFxIyiKe9sw-A3wdldR5gBHkFP8OdmUp4eHtyiIEvFd9AvQ-5oni1li9DPAqXucp_Eskd1-UdaX530UVnnZUtdDFpzo45EdbhDp-eJ4xpaIdjqWVK2n3b8MgB99gsTPNrLFVZ7D2MwhZ0I6pjKMgdd6SJtvLlGm2Y7H5dPhiler2uonluxs">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-surface-container-lowest">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-surface-container-high">ac_unit</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">GDP &amp; PHARMA STANDARDI</span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container px-2 py-0.5 rounded text-on-secondary font-semibold">-25°C / +18°C</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<!-- Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">-25°C / +18°C</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container-high text-on-tertiary-fixed-variant">Pharma Uyumlu</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed-variant">Sertifikalı Isı Güvencesi</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold flex items-center justify-between">
+            Soğuk Zincir &amp; Frigorifik Lojistik
+            <span class="material-symbols-outlined text-secondary-container">thermostat</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+            İlaç, kimyasal ve bozulabilir gıda ürünleriniz için hassas iklimlendirilmiş çift rejimli frigo filosu ve kalibre sensör ağı.
+          </p>
+</div>
+<!-- Micro Feature List -->
+<div class="flex flex-col gap-1.5 p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Detaylı ısı haritası ve kalibrasyon dökümü (PDF rapor)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Dizel ve elektrik tahrikli yedekli soğutma üniteleri</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Validasyonlu hassas sıcaklık ve mühür kontrol protokolü</span>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-1 flex items-center gap-2"><a class="flex-1 h-11 bg-primary-container text-surface-container-lowest rounded-xl flex items-center justify-center gap-1.5 font-label-md text-label-md font-semibold transition-opacity active:opacity-90" href="tel:+908502550000"><span class="material-symbols-outlined text-[18px]">phone_in_talk</span><span class="">Müşteri Temsilcisini Ara</span></a><a aria-label="Hizmet Detayları" class="h-11 px-3.5 flex items-center justify-center gap-1 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" href="#"><span class="material-symbols-outlined text-[20px]">info</span><span class="hidden xs:inline">Detaylar</span></a></div>
+</div>
+</article>
+<!-- Card 3: Intermodal & Kombine Taşımacılık -->
+<article class="service-card flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_4px_16px_rgba(11,28,48,0.06)] transition-transform duration-200 active:scale-[0.99]" data-category="intermodal">
+<div class="p-4 flex flex-col gap-3">
+<!-- Visual Accent Header Box -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">directions_boat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Intermodal &amp; Kombine</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ro-Ro + Demiryolu + Karayolu</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold px-2.5 py-1 rounded bg-secondary-container text-on-secondary">
+            %60 Eko Tasarruf
+          </span>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">%60 Karbon Tasarrufu</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">Ro-Ro &amp; Demiryolu</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed-variant">Maliyet Optimizasyonu</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Karayolu, Ro-Ro ve demiryolu hatlarını kombine ederek Avrupa ve Asya transit koridorlarında çevre dostu, ekonomik ve kesintisiz lojistik akışı.
+        </p>
+<!-- Route Visualization Pill -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low text-on-surface">
+<div class="flex items-center gap-1 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="">İstanbul / Trieste</span>
+</div>
+<div class="flex items-center gap-1 text-outline">
+<span class="w-8 h-[2px] bg-secondary-container"></span>
+<span class="material-symbols-outlined text-[16px] text-secondary-container">train</span>
+<span class="w-8 h-[2px] bg-secondary-container"></span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">pin_drop</span>
+<span class="">Köln / Duisburg</span>
+</div>
+</div>
+<!-- Micro Features -->
+<div class="flex flex-col gap-1.5 p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">45'lik HCPW konteyner çözümleri (90 m³ hacim)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Haftalık düzenli blok tren seferleri</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Çevreye duyarlı yeşil lojistik sertifikasyonu</span>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-1 flex items-center gap-2"><a class="flex-1 h-11 bg-primary-container text-surface-container-lowest rounded-xl flex items-center justify-center gap-1.5 font-label-md text-label-md font-semibold transition-opacity active:opacity-90" href="tel:+908502550000"><span class="material-symbols-outlined text-[18px]">phone_in_talk</span><span class="">Müşteri Temsilcisini Ara</span></a><a aria-label="Hizmet Detayları" class="h-11 px-3.5 flex items-center justify-center gap-1 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" href="#"><span class="material-symbols-outlined text-[20px]">info</span><span class="hidden xs:inline">Detaylar</span></a></div>
+</div>
+</article>
+<!-- Card 4: Akıllı Antrepo & WMS Depolama -->
+<article class="service-card flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_4px_16px_rgba(11,28,48,0.06)] transition-transform duration-200 active:scale-[0.99]" data-category="warehouse">
+<div class="p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">warehouse</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Akıllı Antrepo &amp; Depolama (VAS)</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">A-Tipi Gümrüklü &amp; Serbest Stok</span>
+</div>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">50.000 m² Kapalı</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">A-Tipi Gümrüklü</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed-variant">WMS &amp; Barkod</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Marmara ve İç Anadolu transit merkezlerinde A-Sınıfı gümrüklü/gümrüksüz antrepo depolama, paletleme, cross-docking ve e-ticaret lojistiği.
+        </p>
+<!-- Micro Feature List -->
+<div class="flex flex-col gap-1.5 p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">ERP/API entegre gerçek zamanlı WMS sistemi</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Etiketleme, shrinkleme, kitting ve elleçleme</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">7/24 termal kamera güvenlik &amp; ESFR sprinkler yangın altyapısı</span>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-1 flex items-center gap-2"><a class="flex-1 h-11 bg-primary-container text-surface-container-lowest rounded-xl flex items-center justify-center gap-1.5 font-label-md text-label-md font-semibold transition-opacity active:opacity-90" href="tel:+908502550000"><span class="material-symbols-outlined text-[18px]">phone_in_talk</span><span class="">Müşteri Temsilcisini Ara</span></a><a aria-label="Hizmet Detayları" class="h-11 px-3.5 flex items-center justify-center gap-1 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" href="#"><span class="material-symbols-outlined text-[20px]">info</span><span class="hidden xs:inline">Detaylar</span></a></div>
+</div>
+</article>
+<!-- Card 5: Ağır Yük & Gabari Dışı Proje Taşımacılığı -->
+<article class="service-card flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_4px_16px_rgba(11,28,48,0.06)] transition-transform duration-200 active:scale-[0.99]" data-category="project">
+<div class="p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">forklift</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Ağır Yük &amp; Gabari Dışı Proje</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Özel İzinli Mühendislik Taşımacılığı</span>
+</div>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">Lowbed Filosu</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">Mühendislik Etüdü</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed-variant">Eskort &amp; Yol İzni</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Endüstriyel tesis, rüzgar türbini kanadı, yüksek kapasiteli transformatör ve enerji santrali ekipmanlarının güzergah analizi ve özel eskort eşliğinde nakli.
+        </p>
+<!-- Micro Feature List -->
+<div class="flex flex-col gap-1.5 p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Köprü ve statik yol simülasyon fizibilitesi</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Uluslararası gümrük ve karayolları ağır nakliyat izinleri</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Vinç montaj &amp; şantiye boşaltım süpervizörlüğü</span>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-1 flex items-center gap-2"><a class="flex-1 h-11 bg-primary-container text-surface-container-lowest rounded-xl flex items-center justify-center gap-1.5 font-label-md text-label-md font-semibold transition-opacity active:opacity-90" href="tel:+908502550000"><span class="material-symbols-outlined text-[18px]">phone_in_talk</span><span class="">Müşteri Temsilcisini Ara</span></a><a aria-label="Hizmet Detayları" class="h-11 px-3.5 flex items-center justify-center gap-1 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" href="#"><span class="material-symbols-outlined text-[20px]">info</span><span class="hidden xs:inline">Detaylar</span></a></div>
+</div>
+</article>
+</section>
+<!-- 4. Operational Standards (Compact 2x2 Bento Grid) -->
+<section class="px-margin-mobile py-space-md flex flex-col gap-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider">GÜVENCE VE ENTEGRASYON</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Katma Değerli Standartlarımız</h2>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Standard 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Gümrük &amp; Transit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Hızlı beyanname ve mevzuat çözümleri.</span>
+</div>
+</div>
+<!-- Standard 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Emtia Sigortası</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Taşıma esnasında %100 all-risk teminatı.</span>
+</div>
+</div>
+<!-- Standard 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Canlı API &amp; ERP</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Sisteminize tam anlık veri entegrasyonu.</span>
+</div>
+</div>
+<!-- Standard 4 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">swap_horizontal_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Tersine Lojistik</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">E-ticaret kanalları için iade optimizasyonu.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Step by Step Process Flow -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-4">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider">ŞEFFAF VE ÖNGÖRÜLEBİLİR</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Hizmet Süreci Nasıl İşler?</h2>
+</div>
+<!-- Stepper Card -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<!-- Step 1 -->
+<div class="flex items-start gap-3 relative">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary-container text-surface-container-lowest font-label-md text-label-md font-bold flex items-center justify-center">
+            1
+          </div>
+<div class="w-0.5 h-12 bg-surface-container-high my-1"></div>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-title-md text-title-md text-on-surface font-bold">Talep &amp; Navlun Analizi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+            Yük tonajı, rota ve teslimat SLA kriterleri yapay zeka destekli navlun motorumuzla optimize edilir.
+          </span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-3 relative">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary-container text-surface-container-lowest font-label-md text-label-md font-bold flex items-center justify-center">
+            2
+          </div>
+<div class="w-0.5 h-12 bg-surface-container-high my-1"></div>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-title-md text-title-md text-on-surface font-bold">Dinamik Rota &amp; Araç Ataması</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+            En uygun telematik donanımlı çekici ve dorse eşleşmesi yapılarak dijital taşıma emri oluşturulur.
+          </span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-3 relative">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md font-bold flex items-center justify-center ring-4 ring-secondary-fixed">
+            3
+          </div>
+<div class="w-0.5 h-12 bg-surface-container-high my-1"></div>
+</div>
+<div class="flex flex-col pt-0.5"><span class="font-title-md text-title-md text-on-surface font-bold">Yükleme &amp; Sevkiyat Güvenliği</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+            Ekiplerimizce mühürleme, sıcaklık ve güvenlik protokolleri titizlikle denetlenerek sevkiyat başlatılır.
+          </span></div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-3">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold flex items-center justify-center">
+            4
+          </div>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-title-md text-title-md text-on-surface font-bold">Teslimat &amp; Dijital İrsaliye</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+            Elektronik imza (e-POD) ve CMR evrakları anında muhasebe sisteminize onaylı olarak teslim edilir.
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. High-Conversion CTA Container -->
+<section class="px-margin-mobile pt-space-xs pb-space-lg">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-container via-inverse-surface to-primary-container p-6 text-surface-container-lowest shadow-xl">
+<!-- Decorative ambient gradient circles -->
+<div class="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-36 h-36 rounded-full bg-surface-container-high/10 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">15 Dakikada Çözüm</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold leading-tight">
+          Operasyonel Hacminize Özel Lojistik Çözümü Oluşturalım
+        </h3>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Lojistik ihtiyaçlarınız için uzman operasyon temsilcilerimize doğrudan telefon veya e-posta yoluyla ulaşarak detaylı bilgi alabilirsiniz.</p>
+<div class="flex flex-col gap-2 pt-2"><a class="h-12 w-full bg-secondary-container text-on-secondary rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md font-bold shadow-lg shadow-secondary-container/30 active:scale-[0.98] transition-transform" href="tel:+905337639584"><span class="material-symbols-outlined text-[20px]">phone_in_talk</span><span class="">Müşteri Destek: +90 533 763 95 84</span></a><a class="h-11 w-full bg-surface-container-lowest/10 backdrop-blur-md text-surface-container-lowest rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md font-semibold hover:bg-surface-container-lowest/20 transition-colors" href="mailto:ramazan.olcucu@primegloballojistik.com"><span class="material-symbols-outlined text-[18px]">mail</span><span class="">E-Posta: ramazan.olcucu@primegloballojistik.com</span></a></div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function filterCategory(cat, element) {
+    // Button styling toggle
+    const buttons = document.querySelectorAll('.category-btn');
+    buttons.forEach(btn => {
+      btn.className = 'category-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold whitespace-nowrap transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface';
+    });
+
+    element.className = 'category-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold whitespace-nowrap transition-all duration-200 bg-primary-container text-surface-container-lowest shadow-sm';
+
+    // Cards filtering
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+      if (cat === 'all' || cardCategory === cat) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-secondary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="ana-sayfa" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm leading-tight">Ana Sayfa</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="hizmetlerimiz" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm leading-tight">Hizmetler</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="filo-ve-operasyon" href="#"><span class="material-symbols-outlined text-[22px]">commute</span><span class="font-label-sm text-label-sm leading-tight">Filomuz</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="iletisim" href="#"><span class="material-symbols-outlined text-[22px]">location_city</span><span class="font-label-sm text-label-sm leading-tight">İletişim</span></a></div></nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,69 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  bodyClass: string;
+  content: string;
+  headContent: string;
+}
+
+const { title, description, canonical, bodyClass, content, headContent } = Astro.props;
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e1c2f" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+    <Fragment set:html={headContent} />
+  </head>
+  <body class={bodyClass}>
+    <Fragment set:html={content} />
+    <script>
+      const menuButton = document.querySelector<HTMLButtonElement>('button[aria-label="Menüyü Aç"]');
+
+      if (menuButton) {
+        const menu = document.createElement('nav');
+        menu.className = 'mobile-menu';
+        menu.setAttribute('aria-label', 'Ana menü');
+        menu.hidden = true;
+        menu.innerHTML = `
+          <a href="/">Ana Sayfa</a>
+          <a href="/hakkimizda/">Hakkımızda</a>
+          <a href="/hizmetlerimiz/">Hizmetlerimiz</a>
+          <a href="/#filo">Filomuz</a>
+          <a href="/iletisim/">İletişim & Teklif</a>
+        `;
+        document.body.append(menu);
+
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.addEventListener('click', () => {
+          menu.hidden = !menu.hidden;
+          menuButton.setAttribute('aria-expanded', String(!menu.hidden));
+          menuButton.setAttribute('aria-label', menu.hidden ? 'Menüyü Aç' : 'Menüyü Kapat');
+        });
+        menu.addEventListener('click', (event) => {
+          if (event.target instanceof HTMLAnchorElement) {
+            menu.hidden = true;
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Menüyü Aç');
+          }
+        });
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') {
+            menu.hidden = true;
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Menüyü Aç');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
