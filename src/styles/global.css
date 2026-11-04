@@ -16,6 +16,15 @@ img {
   max-width: 100%;
 }
 
+.truncate {
+  min-width: 0;
+}
+
+main > div > .bg-primary-container > .flex.items-center {
+  min-width: 0;
+  flex: 1;
+}
+
 button,
 a {
   -webkit-tap-highlight-color: transparent;
@@ -33,6 +42,14 @@ main > div {
   width: 100%;
   max-width: 1280px;
   margin-inline: auto;
+}
+
+header {
+  border-bottom: 1px solid rgb(11 28 48 / 6%);
+}
+
+.desktop-nav {
+  display: none;
 }
 
 .mobile-menu {
@@ -67,12 +84,151 @@ main > div {
 }
 
 @media (min-width: 768px) {
+  body {
+    background: #f8f9ff;
+  }
+
+  header {
+    background: rgb(248 249 255 / 96%);
+  }
+
+  header > div {
+    height: 76px;
+    padding-inline: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  header > div > div:first-child img {
+    height: 2.5rem;
+  }
+
+  footer > div {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    align-items: start;
+  }
+
+  header button[aria-label^='Menüyü'] {
+    display: none;
+  }
+
+  .desktop-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2vw, 2rem);
+    transform: translate(-50%, -50%);
+  }
+
+  .desktop-nav a {
+    color: #0b1c30;
+    font-family: Inter, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 160ms ease;
+  }
+
+  .desktop-nav a:hover {
+    color: #fd651e;
+  }
+
+  main {
+    padding-top: 76px !important;
+  }
+
   main > div > section {
     padding-inline: clamp(1.5rem, 4vw, 3rem);
   }
 
+  main > div > section:first-of-type {
+    padding-block: clamp(2.5rem, 5vw, 5rem);
+  }
+
+  main > div > section:first-of-type > div.relative.z-10 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.95fr);
+    align-items: center;
+    gap: 1.25rem clamp(2rem, 4vw, 4rem);
+  }
+
+  main > div > section:first-of-type > div.relative.z-10 > :nth-child(1),
+  main > div > section:first-of-type > div.relative.z-10 > :nth-child(2),
+  main > div > section:first-of-type > div.relative.z-10 > :nth-child(3),
+  main > div > section:first-of-type > div.relative.z-10 > :nth-child(4) {
+    grid-column: 1;
+  }
+
+  main > div > section:first-of-type > div.relative.z-10 > :nth-child(2) h1 {
+    font-size: clamp(2.5rem, 4vw, 3.75rem);
+    line-height: 1.1;
+  }
+
+  main > div > section:first-of-type > div.relative.z-10 > :nth-child(5) {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    height: 100%;
+    min-height: 26rem;
+    margin: 0;
+  }
+
+  main > div > section:first-of-type > div.relative.z-10 > :nth-child(5) img {
+    min-height: 26rem;
+  }
+
+  main > div > section:not(:first-of-type) {
+    padding-block: clamp(3rem, 5vw, 5rem);
+  }
+
+  main > div > section:not(:first-of-type) h2 {
+    font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+    line-height: 1.2;
+  }
+
   #servicesList {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  #servicesList .service-card {
+    height: 100%;
+  }
+
+  main > div > section .grid.grid-cols-1.gap-space-sm {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  main > div > section .grid.grid-cols-1.gap-space-md {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  main > div > section .grid.grid-cols-1.gap-2\.5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  main > div > section .grid.grid-cols-2.gap-space-sm {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  main > div > section .grid.grid-cols-3.gap-space-xs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  main > div > section .grid.grid-cols-2.gap-2\.5 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #servicesList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #categoryFilterContainer {
+    justify-content: center;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 
   nav[data-active-classes] {
@@ -81,6 +237,33 @@ main > div {
 
   main {
     padding-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  main > div > section:first-of-type > div.relative.z-10 {
+    grid-template-columns: minmax(0, 1.05fr) minmax(32rem, 0.95fr);
+  }
+
+  #servicesList {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop-nav {
+    left: 53%;
+    gap: 0.85rem;
+  }
+
+  .desktop-nav a {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  header > div > div:last-child > a {
+    display: none;
   }
 }
 

@@ -64,6 +64,10 @@ export function prepareStitchPage(source: string, page: 'home' | 'about' | 'serv
 
   content = content.replace(/tel:\+908502550000/g, 'tel:+905337639584');
   content = content.replace(/https:\/\/maps\.google\.com/g, 'https://www.google.com/maps/search/?api=1&query=Metrik+Lojistik');
+  content = content.replace(
+    /<header\b[^>]*>/i,
+    (tag) => `${tag}<nav class="desktop-nav" aria-label="Ana menü"><a href="/">Ana Sayfa</a><a href="/hakkimizda/">Hakkımızda</a><a href="/hizmetlerimiz/">Hizmetlerimiz</a><a href="/#filo">Filomuz</a><a href="/iletisim/">İletişim</a></nav>`,
+  );
 
   const sectionAnchors: Record<typeof page, Array<[string, string]>> = {
     home: [['Filo Kapasitesi', 'filo'], ['Kapsamlı Lojistik Hizmetlerimiz', 'services']],
