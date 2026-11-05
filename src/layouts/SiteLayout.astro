@@ -40,9 +40,15 @@ const { title, description, canonical, bodyClass, content, headContent, desktopC
           <a href="/">Ana Sayfa</a>
           <a href="/hakkimizda/">Hakkımızda</a>
           <a href="/hizmetlerimiz/">Hizmetlerimiz</a>
-          <a href="/#filo">Filomuz</a>
           <a href="/iletisim/">İletişim & Teklif</a>
         `;
+        const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
+        menu.querySelectorAll<HTMLAnchorElement>('a').forEach((link) => {
+          const linkPath = new URL(link.href).pathname.replace(/\/+$/, '') || '/';
+          if (linkPath === currentPath) {
+            link.setAttribute('aria-current', 'page');
+          }
+        });
         document.body.append(menu);
 
         menuButton.setAttribute('aria-expanded', 'false');

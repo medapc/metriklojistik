@@ -1,17 +1,83 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import source from '../../stitch_metrik_lojistik_corporate_website/metrik_lojistik_i_leti_im_teklif_formu/code.html?raw';
-import desktopSource from '../../stitch_metrik_lojistik_corporate_website(desktop edition)/stitch_metrik_lojistik_corporate_website/metrik_lojistik_masa_st_i_leti_im/code.html?raw';
-import { prepareDesktopStitchPage, prepareStitchPage } from '../lib/stitch';
+import { prepareStitchPage } from '../lib/stitch';
 
 const page = prepareStitchPage(source, 'contact');
-const desktopPage = prepareDesktopStitchPage(desktopSource, 'contact');
+const header = page.content.match(/<header\b[\s\S]*?<\/header>/i)?.[0];
+
+if (!header) {
+  throw new Error('The contact page is missing its shared site header.');
+}
+
+const contactContent = `${header}
+  <main class="contact-page">
+    <section class="contact-hero" aria-labelledby="contact-title">
+      <img
+        class="contact-hero-image"
+        src="/assets/truck-yard.png"
+        alt="Metrik Lojistik logolu tırların bulunduğu lojistik merkezi"
+        fetchpriority="high"
+      />
+      <div class="contact-hero-content">
+        <p class="contact-eyebrow">İLETİŞİM</p>
+        <h1 id="contact-title">Yükünüz yola çıksın, biz yanınızdayız.</h1>
+        <p>Teklif ve sevkiyat ihtiyaçlarınız için ekibimize doğrudan ulaşın.</p>
+      </div>
+    </section>
+
+    <section class="contact-grid" aria-label="İletişim kanalları">
+      <article class="contact-card contact-card-primary">
+        <h2>Sevkiyat ve WhatsApp</h2>
+        <p>Yük ve rota bilgileriniz için operasyon ekibimize ulaşın.</p>
+        <a class="contact-number" href="tel:+905337639584">+90 533 763 95 84</a>
+        <div class="contact-actions">
+          <a class="contact-button contact-button-whatsapp" href="https://wa.me/905337639584" target="_blank" rel="noopener noreferrer">WhatsApp'tan yazın</a>
+          <a class="contact-button contact-button-light" href="tel:+905337639584">Ara</a>
+        </div>
+      </article>
+
+      <article class="contact-card">
+        <h2>Merkez ofis</h2>
+        <p>Kurumsal görüşmeler ve genel bilgi için.</p>
+        <a class="contact-number" href="tel:+902623190041">+90 262 319 00 41</a>
+        <a class="contact-text-link" href="tel:+902623190041">Ofisi arayın</a>
+      </article>
+
+      <article class="contact-card">
+        <h2>E-posta</h2>
+        <p>Teklif ve kurumsal taleplerinizi e-posta ile iletin.</p>
+        <a class="contact-number contact-email" href="mailto:info@metriklojistik.com">info@metriklojistik.com</a>
+        <a class="contact-text-link" href="mailto:info@metriklojistik.com">E-posta gönderin</a>
+      </article>
+    </section>
+
+    <section class="contact-address" aria-labelledby="contact-address-title">
+      <div>
+        <h2 id="contact-address-title">Ofis adresimiz</h2>
+        <address>Mimarsinan Mh. Eşref Bitlis Cad. Huzur İş Merkezi No:362 Kat:1 D:31, Kocaeli / Türkiye</address>
+      </div>
+      <a class="contact-text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Mimarsinan+Mh.+Eşref+Bitlis+Cad.+Huzur+İş+Merkezi+Kocaeli" target="_blank" rel="noopener noreferrer">Haritada görüntüleyin</a>
+    </section>
+
+    <section class="contact-map" aria-label="Ofisimizin Google Haritalar konumu">
+      <iframe
+        title="Metrik Lojistik Kocaeli ofisi Google Haritalar konumu"
+        src="https://www.google.com/maps?q=Mimarsinan+Mh.+E%C5%9Fref+Bitlis+Cad.+Huzur+%C4%B0%C5%9F+Merkezi+No%3A362+Kocaeli&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </section>
+  </main>`;
 ---
 
 <SiteLayout
   title="İletişim ve Teklif | Metrik Lojistik"
   description="Metrik Lojistik operasyon ve teklif ekibine telefon, WhatsApp veya e-posta ile ulaşın."
   canonical="https://metriklojistik.com/iletisim/"
-  desktopContent={desktopPage.content}
-  {...page}
+  bodyClass={page.bodyClass}
+  content={contactContent}
+  desktopContent={contactContent}
+  headContent={page.headContent}
 />

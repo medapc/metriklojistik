@@ -3,7 +3,7 @@ export default {
   content: [
     './src/**/*.{astro,html,js,ts}',
     './stitch_metrik_lojistik_corporate_website/**/*.html',
-    './stitch_metrik_lojistik_corporate_website(desktop edition)/stitch_metrik_lojistik_corporate_website/**/*.html',
+    './stitch_metrik_lojistik_corporate_website(desktop edition)/**/*.html',
   ],
   theme: {
     extend: {
