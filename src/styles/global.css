@@ -46,7 +46,7 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid #fd651e;
+  outline: 3px solid #0fa163;
   outline-offset: 3px;
 }
 
@@ -121,7 +121,7 @@ header {
 
 .site-contact-links .material-symbols-outlined,
 .site-hours .material-symbols-outlined {
-  color: #fd651e;
+  color: #0fa163;
   font-size: 0.95rem;
 }
 
@@ -176,7 +176,7 @@ header {
 }
 
 .site-nav a[aria-current='page'] {
-  box-shadow: inset 0 -2px #fd651e;
+  box-shadow: inset 0 -2px #0fa163;
 }
 
 .site-header-actions {
@@ -215,13 +215,13 @@ header {
 
 .site-phone .material-symbols-outlined,
 .site-quote .material-symbols-outlined {
-  color: #c44a00;
+  color: #0fa163;
 }
 
 .site-quote {
   padding: 0 1rem;
-  background: #a73a00;
-  color: #fff;
+  background: #0fa163;
+  color: #002b1a;
 }
 
 .site-quote .material-symbols-outlined {
@@ -284,7 +284,7 @@ header {
 
 .contact-eyebrow {
   margin: 0 0 0.75rem;
-  color: #ff9a5c;
+  color: #0fa163;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -385,7 +385,7 @@ header {
 .contact-text-link {
   display: inline-flex;
   margin-top: 1rem;
-  color: #a73a00;
+  color: #0fa163;
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
@@ -469,7 +469,7 @@ header {
 
 .mobile-menu a[aria-current='page'] {
   background: #e5eeff;
-  color: #a73a00;
+  color: #0fa163;
 }
 
 @media (min-width: 768px) {

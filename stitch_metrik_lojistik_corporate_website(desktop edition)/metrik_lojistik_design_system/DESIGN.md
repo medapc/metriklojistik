@@ -21,10 +21,10 @@ colors:
   primary-container: '#0e1c2f'
   on-primary-container: '#77849c'
   inverse-primary: '#bac7e1'
-  secondary: '#a73a00'
-  on-secondary: '#ffffff'
-  secondary-container: '#fd651e'
-  on-secondary-container: '#571a00'
+  secondary: '#0fa163'
+  on-secondary: '#002b1a'
+  secondary-container: '#0fa163'
+  on-secondary-container: '#004d2f'
   tertiary: '#000000'
   on-tertiary: '#ffffff'
   tertiary-container: '#00164e'
@@ -37,10 +37,10 @@ colors:
   primary-fixed-dim: '#bac7e1'
   on-primary-fixed: '#0e1c2f'
   on-primary-fixed-variant: '#3a475c'
-  secondary-fixed: '#ffdbce'
-  secondary-fixed-dim: '#ffb599'
-  on-secondary-fixed: '#370e00'
-  on-secondary-fixed-variant: '#7f2b00'
+  secondary-fixed: '#d4f1e2'
+  secondary-fixed-dim: '#a7dfbd'
+  on-secondary-fixed: '#002112'
+  on-secondary-fixed-variant: '#005a35'
   tertiary-fixed: '#dce1ff'
   tertiary-fixed-dim: '#b6c4ff'
   on-tertiary-fixed: '#00164e'
@@ -152,13 +152,13 @@ spacing:
 ## Brand & Style
 This design system embodies corporate authority, technological precision, and operational resilience tailored for enterprise-scale B2B freight, supply chain orchestration, and multimodal logistics. Drawing inspiration from modern Swiss grid discipline integrated with precision engineering aesthetics, it eschews frivolous decoration in favor of high-legibility typographic hierarchies, expansive architectural whitespace, and clear operational data density.
 
-The aesthetic fuses modern corporate minimalism with industrial clarity. Deep navy foundations deliver institutional gravitas and security, offset by luminous neutral surfaces and focused industrial amber accents that direct operational attention without causing sensory fatigue. The emotional response is one of absolute reliability, computational rigor, and frictionless logistical control.
+The aesthetic fuses modern corporate minimalism with industrial clarity. Deep navy foundations deliver institutional gravitas and security, offset by luminous neutral surfaces and focused emerald accents that direct operational attention without causing sensory fatigue. The emotional response is one of absolute reliability, computational rigor, and frictionless logistical control.
 
 ## Colors
 The color architecture relies on high-contrast semantic hierarchies engineered for complex data environments, tracking maps, and executive reporting:
 
 - **Primary (`#0B192C` - Deep Enterprise Navy):** Serves as the foundational anchor for structural navigation, high-level headers, primary surfaces in inverted modes, and authoritative elements. Communicates operational scale and institutional stability.
-- **Secondary (`#EA580C` - Industrial Safety Amber):** The strategic accent reserved for actionable states, primary conversions, active waypoints, delivery exceptions, and mission-critical tracking alerts. Used deliberately to create instant visual anchors against neutral backdrops.
+- **Secondary (`#0fa163` - Brand Green):** The strategic accent reserved for actionable states, primary conversions, active waypoints, delivery exceptions, and mission-critical tracking alerts. Used deliberately to create instant visual anchors against neutral backdrops.
 - **Tertiary (`#1E3A8A` - Technical Cobalt):** Applied to secondary interactive markers, filtered states, informational badges, and telemetry graphs.
 - **Neutrals & Surfaces:**
   - Base Background: `#F8FAFC` (Slate 50) for reduced eye strain across prolonged monitoring sessions.
@@ -208,7 +208,7 @@ A conservative, structural roundedness level (`roundedness: 1` / soft corners) e
 ## Components
 
 ### Buttons
-- **Primary:** Background `#EA580C`, text `#FFFFFF`, font-weight 600. Hover state `#C2410C`, active state `#9A3412`. Focused with a 2px offset ring of `#EA580C`. Reserved for primary actions (e.g., "Create Shipment", "Approve Customs", "Submit Quotation").
+- **Primary:** Background `#0fa163`, text `#FFFFFF`, font-weight 600. Hover state `#0fa163`, active state `#0fa163`. Focused with a 2px offset ring of `#0fa163`. Reserved for primary actions (e.g., "Create Shipment", "Approve Customs", "Submit Quotation").
 - **Secondary (Corporate Brand):** Background `#0B192C`, text `#FFFFFF`, hover `#1E293B`. Used for major portal transitions and dispatch approvals.
 - **Outline / Quiet:** Background `#FFFFFF`, border `1px solid #E2E8F0`, text `#334155`, hover background `#F8FAFC` and text `#0F172A`. Applied to document downloads and filter controls.
 
@@ -219,7 +219,7 @@ A conservative, structural roundedness level (`roundedness: 1` / soft corners) e
 ### Status Chips & Badges
 - Compact height (24px), font size 11px uppercase Inter with tabular figures.
 - Semantic configurations:
-  - **In Transit / Active:** Background `#FFF7ED`, text `#C2410C`, border `1px solid #FFEDD5` (with a pulsing 6px `#EA580C` dot indicator).
+  - **In Transit / Active:** Background `#d4f1e2`, text `#0fa163`, border `1px solid #a7dfbd` (with a pulsing 6px `#0fa163` dot indicator).
   - **Delivered / Completed:** Background `#ECFDF5`, text `#047857`, border `1px solid #D1FAE5`.
   - **Exception / Alert:** Background `#FEF2F2`, text `#B91C1C`, border `1px solid #FEE2E2`.
   - **Customs Hold:** Background `#FFFBEB`, text `#B45309`, border `1px solid #FEF3C7`.
@@ -235,5 +235,5 @@ A conservative, structural roundedness level (`roundedness: 1` / soft corners) e
 - Pinned right column for quick operational triggers (e.g., "View CMR", "Track Vehicle", "Download BOL").
 
 ### Logistics-Specific Components
-- **Waypoint Route Timeline:** Vertical or horizontal stepped progress track featuring solid 2px links (`#E2E8F0` inactive, `#0B192C` completed, `#EA580C` current transit hub). Hub nodes feature nested geometric circles with vehicle icon badges.
+- **Waypoint Route Timeline:** Vertical or horizontal stepped progress track featuring solid 2px links (`#E2E8F0` inactive, `#0B192C` completed, `#0fa163` current transit hub). Hub nodes feature nested geometric circles with vehicle icon badges.
 - **Fleet Telemetry Pill:** Embedded status widget displaying temperature, battery, or seal tamper detection data with instantaneous color shifts for compliance violations.
